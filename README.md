@@ -5,6 +5,8 @@ Ayro UI is Bootstrap UI Library that comes with hundreds of essential UI compone
 
 ### [🌏 Visit Website](https://ayroui.com)
 
+### [🌏 Documentation](https://ayroui.com/docs)
+
 [![playbootstrap-demo](https://uideck.com/wp-content/uploads/2021/09/ayro-preview.jpg)](https://ayroui.com)
 
 ## 💙 Support
