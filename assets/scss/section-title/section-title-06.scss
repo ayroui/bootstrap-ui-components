@@ -1,0 +1,86 @@
+@import "../variables";
+@import "../mixin";
+
+/*============================
+  Section Title Six CSS
+==============================*/
+
+.section-title-six {
+    text-align: center;
+    max-width: 550px;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 5;
+
+    @media #{$md} {
+        margin-bottom: 45px;
+    }
+
+    @media #{$xs} {
+        margin-bottom: 35px;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 20px;
+        color: var(--primary);
+        text-transform: capitalize;
+        position: relative;
+        line-height: 14px;
+
+        @media #{$md} {
+            font-size: 15px;
+            margin-bottom: 16px
+        }
+
+        @media #{$xs} {
+            font-size: 15px;
+            margin-bottom: 14px
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 2px;
+            width: 15px;
+            background-color: var(--primary);
+            border-radius: 8px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            right: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 2px;
+            width: 15px;
+            background-color: var(--primary);
+            border-radius: 8px;
+        }
+    }
+
+    h2 {
+        margin-bottom: 15px;
+
+        @media #{$md} {
+            font-size: 2rem;
+            line-height: 2.8rem;
+        }
+
+        @media #{$xs} {
+            font-size: 1.5rem;
+            line-height: 1.9rem;
+        }
+    }
+
+    p {
+        color: var(--dark-3);
+    }
+}

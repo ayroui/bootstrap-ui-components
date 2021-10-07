@@ -1,0 +1,152 @@
+/*===== portfolio TWO =====*/
+.portfolio-two {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.portfolio-two .portfolio-menu button {
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark-3);
+  line-height: 48px;
+  padding: 0 30px;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 5;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  cursor: pointer;
+  margin: 0 2px;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-two .portfolio-menu button {
+    font-size: 14px;
+    padding: 0 26px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-two .portfolio-menu button {
+    font-size: 14px;
+    padding: 0 22px;
+    line-height: 42px;
+  }
+}
+.portfolio-two .portfolio-menu button::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.portfolio-two .portfolio-menu button:hover, .portfolio-two .portfolio-menu button.active {
+  color: var(--white);
+}
+.portfolio-two .portfolio-menu button:hover::before, .portfolio-two .portfolio-menu button.active::before {
+  opacity: 1;
+}
+.portfolio-two .hide {
+  display: none;
+}
+.portfolio-two .show {
+  display: block;
+}
+
+.portfolio-style-two {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+.portfolio-style-two .portfolio-image img {
+  width: 100%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.portfolio-style-two .portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+  border-radius: 8px;
+}
+.portfolio-style-two .portfolio-content {
+  padding: 16px;
+}
+.portfolio-style-two .portfolio-icon {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px;
+}
+.portfolio-style-two .portfolio-icon a {
+  font-size: 48px;
+  color: var(--primary);
+  position: relative;
+  z-index: 5;
+  line-height: 50px;
+}
+.portfolio-style-two .portfolio-text {
+  padding-top: 24px;
+}
+@media (max-width: 767px) {
+  .portfolio-style-two .portfolio-text {
+    padding-top: 10px;
+  }
+}
+.portfolio-style-two .portfolio-title a {
+  color: var(--black);
+  font-size: 24px;
+  line-height: 30px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-style-two .portfolio-title a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-style-two .portfolio-title a {
+    font-size: 20px;
+  }
+}
+.portfolio-style-two .text {
+  color: var(--black);
+  margin-top: 8px;
+}
+.portfolio-style-two:hover .portfolio-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=portfolio-02.css.map */

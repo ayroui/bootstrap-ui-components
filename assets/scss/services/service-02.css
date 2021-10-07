@@ -1,0 +1,192 @@
+/*===========================
+  services css 
+===========================*/
+.services-two {
+  position: relative;
+  background-color: var(--light-2);
+  padding: 100px 0;
+  /* Section Title Six */
+}
+.services-two .section-title-six {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-two .section-title-six {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .services-two .section-title-six {
+    margin-bottom: 35px;
+  }
+}
+.services-two .section-title-six h3 {
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--primary);
+  text-transform: capitalize;
+  position: relative;
+  line-height: 14px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-two .section-title-six h3 {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .services-two .section-title-six h3 {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+}
+.services-two .section-title-six h3::before {
+  position: absolute;
+  content: "";
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 15px;
+  background-color: var(--primary);
+  border-radius: 8px;
+}
+.services-two .section-title-six h3::after {
+  position: absolute;
+  content: "";
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 15px;
+  background-color: var(--primary);
+  border-radius: 8px;
+}
+.services-two .section-title-six h2 {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-two .section-title-six h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .services-two .section-title-six h2 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+.services-two .section-title-six p {
+  color: var(--dark-3);
+}
+.services-two .single-service {
+  padding: 35px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-2);
+  background-color: var(--white);
+  margin-top: 30px;
+  position: relative;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  overflow: hidden;
+  z-index: 2;
+}
+.services-two .single-service .shape {
+  position: absolute;
+  left: -30px;
+  top: -17px;
+  height: 60px;
+  width: auto;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.services-two .single-service .shape2 {
+  position: absolute;
+  right: -30px;
+  bottom: -17px;
+  height: 60px;
+  width: auto;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.services-two .single-service:hover .shape {
+  left: 0;
+}
+.services-two .single-service:hover .shape2 {
+  right: 0;
+}
+.services-two .single-service:hover {
+  box-shadow: var(--shadow-4);
+}
+.services-two .single-service .serial {
+  font-size: 50px;
+  font-weight: 700;
+  color: #f4f4f4;
+  position: absolute;
+  right: 25px;
+  top: 18px;
+  z-index: -1;
+}
+.services-two .single-service .service-icon {
+  height: 65px;
+  width: 65px;
+  line-height: 65px;
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--primary);
+  text-align: center;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  font-size: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.services-two .single-service:hover .service-icon {
+  background-color: var(--primary);
+  box-shadow: var(--shadow-4);
+}
+.services-two .single-service h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.services-two .single-service a {
+  color: var(--primary);
+  margin-top: 40px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 15px;
+}
+.services-two .single-service a i {
+  font-size: 22px;
+  margin-left: 12px;
+  position: relative;
+  top: 3px;
+}
+.services-two .single-service a:hover {
+  letter-spacing: 1px;
+}
+
+/*# sourceMappingURL=service-02.css.map */

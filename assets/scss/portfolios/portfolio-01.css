@@ -1,0 +1,169 @@
+/*===== portfolio ONE =====*/
+.portfolio-one {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.portfolio-one .portfolio-menu button {
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark-3);
+  line-height: 48px;
+  padding: 0 30px;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 5;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  cursor: pointer;
+  margin-right: 4px;
+  text-transform: uppercase;
+}
+.portfolio-one .portfolio-menu button:last-child {
+  margin-right: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-one .portfolio-menu button {
+    font-size: 14px;
+    padding: 0 26px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-one .portfolio-menu button {
+    font-size: 14px;
+    padding: 0 22px;
+    line-height: 42px;
+  }
+}
+.portfolio-one .portfolio-menu button::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.portfolio-one .portfolio-menu button:hover, .portfolio-one .portfolio-menu button.active {
+  color: var(--white);
+}
+.portfolio-one .portfolio-menu button:hover::before, .portfolio-one .portfolio-menu button.active::before {
+  opacity: 1;
+}
+.portfolio-one .hide {
+  display: none;
+}
+.portfolio-one .show {
+  display: block;
+}
+
+.portfolio-style-one {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+.portfolio-style-one .portfolio-image img {
+  width: 100%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.portfolio-style-one .portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+.portfolio-style-one .portfolio-content {
+  padding: 16px;
+}
+.portfolio-style-one .portfolio-icon {
+  position: relative;
+  display: inline-block;
+}
+.portfolio-style-one .portfolio-icon a {
+  font-size: 30px;
+  color: var(--white);
+  position: relative;
+  z-index: 5;
+  line-height: 90px;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.portfolio-style-one .portfolio-icon a:hover {
+  background-color: var(--white);
+  color: var(--primary);
+  border-color: transparent;
+}
+.portfolio-style-one .portfolio-text {
+  padding-top: 24px;
+}
+@media (max-width: 767px) {
+  .portfolio-style-one .portfolio-text {
+    padding-top: 10px;
+  }
+}
+.portfolio-style-one .portfolio-title a {
+  color: var(--white);
+  font-size: 24px;
+  line-height: 30px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-style-one .portfolio-title a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-style-one .portfolio-title a {
+    font-size: 20px;
+  }
+}
+.portfolio-style-one .text {
+  color: var(--white);
+  margin-top: 8px;
+  opacity: 0.7;
+}
+.portfolio-style-one:hover .portfolio-image img {
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  filter: blur(8px);
+}
+.portfolio-style-one:hover .portfolio-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=portfolio-01.css.map */

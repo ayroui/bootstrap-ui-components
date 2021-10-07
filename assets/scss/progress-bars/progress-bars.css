@@ -1,0 +1,437 @@
+/*===========================
+    05.PROGRESS BARS css 
+===========================*/
+.progress-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--dark-3);
+}
+@media (max-width: 767px) {
+  .progress-title {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+.color-one {
+  background: var(--primary);
+}
+
+.color-two {
+  background: var(--success);
+}
+
+.color-three {
+  background: var(--info);
+}
+
+.color-four {
+  background: var(--caution);
+}
+
+.color-five {
+  background: var(--error);
+}
+
+.progress-style .single-progress-bar {
+  margin-top: 30px;
+}
+.progress-style .single-progress-bar .progress-outer {
+  width: 100%;
+  background-color: var(--light-1);
+  height: 32px;
+  border-radius: 50px;
+  position: relative;
+}
+.progress-style .single-progress-bar .progress-outer .progress-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  border-radius: 50px;
+  width: 0;
+  -webkit-transition: all 2s ease-out 0s;
+  -moz-transition: all 2s ease-out 0s;
+  -ms-transition: all 2s ease-out 0s;
+  -o-transition: all 2s ease-out 0s;
+  transition: all 2s ease-out 0s;
+}
+.progress-style.style-two .single-progress-bar .progress-text {
+  color: var(--white);
+  padding: 0 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 32px;
+}
+.progress-style.style-three .single-progress-bar {
+  margin-top: 68px;
+}
+.progress-style.style-three .single-progress-bar .progress-outer {
+  height: 16px;
+}
+.progress-style.style-three .single-progress-bar .progress-outer .progress-content {
+  height: 16px;
+}
+.progress-style.thin-2x .single-progress-bar {
+  margin-top: 68px;
+}
+.progress-style.thin-2x .single-progress-bar .progress-outer {
+  height: 4px;
+}
+.progress-style.thin-2x .single-progress-bar .progress-outer .progress-content {
+  height: 4px;
+}
+.progress-style.style-four .single-progress-bar {
+  margin-top: 35px;
+}
+.progress-style.style-four .single-progress-bar .progress-title-holder {
+  margin-bottom: 8px;
+}
+.progress-style.style-four .single-progress-bar .progress-title-holder .holder-title p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+}
+.progress-style.style-four .single-progress-bar .progress-title-holder .holder-percent span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--black);
+}
+.progress-style.style-four .single-progress-bar .progress-outer {
+  height: 16px;
+}
+.progress-style.style-four .single-progress-bar .progress-outer .progress-content {
+  height: 16px;
+}
+.progress-style.style-five .single-progress-bar {
+  margin-top: 70px;
+}
+.progress-style.style-five .single-progress-bar .progress-title-holder {
+  margin-top: 8px;
+}
+.progress-style.style-five .single-progress-bar .progress-title-holder .holder-percent span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--black);
+}
+.progress-style.style-five .single-progress-bar .progress-outer {
+  height: 16px;
+}
+.progress-style.style-five .single-progress-bar .progress-outer .progress-content {
+  height: 16px;
+}
+.progress-style.style-five .single-progress-bar .progress-outer .progress-content .holder-title {
+  width: 120px;
+  text-align: center;
+  height: 30px;
+  border-radius: 50px;
+  position: absolute;
+  top: -45px;
+  right: -60px;
+}
+.progress-style.style-five .single-progress-bar .progress-outer .progress-content .holder-title p {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--white);
+}
+
+/*===== COUNTER STYLE =====*/
+.counter-style .counter-one {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.16);
+  padding-top: 55px;
+  padding-bottom: 40px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+.counter-style .counter-one::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  top: 0;
+  left: 0;
+  background: var(--primary);
+}
+.counter-style .counter-one .counter-icon {
+  margin-bottom: 5px;
+}
+.counter-style .counter-one .counter-icon i {
+  font-size: 80px;
+  line-height: 60px;
+  color: var(--primary);
+}
+.counter-style .counter-one .counter-content .count {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 55px;
+  color: var(--black);
+  margin-bottom: 4px;
+}
+.counter-style .counter-one .counter-content .text {
+  font-size: 24px;
+  color: var(--dark-3);
+}
+.counter-style .counter-two {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.16);
+  padding: 23px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.counter-style .counter-two::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  top: 0;
+  left: 0;
+  background: var(--error);
+}
+.counter-style .counter-two .counter-icon {
+  margin-bottom: 5px;
+}
+.counter-style .counter-two .counter-icon i {
+  font-size: 66px;
+  line-height: 60px;
+  color: var(--error);
+}
+.counter-style .counter-two .counter-content {
+  padding-left: 11px;
+}
+.counter-style .counter-two .counter-content .count {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--black);
+  margin-bottom: 4px;
+}
+.counter-style .counter-two .counter-content .text {
+  font-size: 16px;
+  color: var(--dark-3);
+}
+.counter-style .counter-three {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.16);
+  padding: 23px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--success);
+}
+.counter-style .counter-three .counter-icon {
+  margin-bottom: 5px;
+}
+.counter-style .counter-three .counter-icon i {
+  font-size: 66px;
+  line-height: 60px;
+  color: var(--white);
+}
+.counter-style .counter-three .counter-content {
+  padding-left: 11px;
+}
+.counter-style .counter-three .counter-content .count {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.counter-style .counter-three .counter-content .text {
+  font-size: 16px;
+  color: var(--white);
+}
+.counter-style .counter-four {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.16);
+  padding: 23px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.counter-style .counter-four::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--primary);
+}
+.counter-style .counter-four .counter-icon {
+  margin-bottom: 5px;
+}
+.counter-style .counter-four .counter-icon i {
+  font-size: 66px;
+  line-height: 60px;
+  color: var(--primary);
+}
+.counter-style .counter-four .counter-content {
+  padding-left: 11px;
+}
+.counter-style .counter-four .counter-content .count {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--black);
+  margin-bottom: 4px;
+}
+.counter-style .counter-four .counter-content .text {
+  font-size: 16px;
+  color: var(--dark-3);
+}
+.counter-style .counter-five {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.16);
+  padding: 23px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--primary);
+}
+.counter-style .counter-five .counter-icon {
+  margin-bottom: 5px;
+}
+.counter-style .counter-five .counter-icon i {
+  font-size: 66px;
+  line-height: 60px;
+  color: var(--white);
+}
+.counter-style .counter-five .counter-content {
+  padding-left: 11px;
+}
+.counter-style .counter-five .counter-content .count {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.counter-style .counter-five .counter-content .text {
+  font-size: 16px;
+  color: var(--white);
+}
+.counter-style .counter-six {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.16);
+  padding-top: 55px;
+  padding-bottom: 40px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  background: var(--primary);
+}
+.counter-style .counter-six .counter-icon {
+  margin-bottom: 5px;
+}
+.counter-style .counter-six .counter-icon i {
+  font-size: 80px;
+  line-height: 60px;
+  color: var(--white);
+}
+.counter-style .counter-six .counter-content .count {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 55px;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.counter-style .counter-six .counter-content .text {
+  font-size: 24px;
+  color: var(--white);
+}
+
+.single-counter .counter-shape {
+  width: 55px;
+}
+.single-counter .counter-shape .shape-1, .single-counter .counter-shape .shape-2 {
+  display: inline-block;
+  width: 14px;
+  height: 70px;
+  position: relative;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  transform: rotate(25deg);
+  left: 12px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .single-counter .counter-shape .shape-1, .single-counter .counter-shape .shape-2 {
+    width: 10px;
+  }
+}
+.single-counter .counter-shape .shape-1::before, .single-counter .counter-shape .shape-1::after, .single-counter .counter-shape .shape-2::before, .single-counter .counter-shape .shape-2::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: -1px;
+  right: -1px;
+  border-top: 12px solid var(--white);
+  border-left: 16px solid transparent;
+}
+.single-counter .counter-shape .shape-1::after, .single-counter .counter-shape .shape-2::after {
+  border-top: 0;
+  border-bottom: 6px solid var(--white);
+  top: auto;
+  bottom: -1px;
+}
+.single-counter .counter-shape .shape-1 {
+  opacity: 0.5;
+  left: 15px;
+  bottom: 1px;
+}
+.single-counter .counter-content {
+  padding-left: 10px;
+}
+.single-counter .counter-content .counter-count {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--black);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .single-counter .counter-content .counter-count {
+    font-size: 32px;
+  }
+}
+.single-counter .counter-content .text {
+  font-weight: 600;
+  color: var(--dark-3);
+}
+.single-counter.counter-color-1 .counter-shape .shape-1, .single-counter.counter-color-1 .counter-shape .shape-2 {
+  background: var(--primary);
+}
+.single-counter.counter-color-2 .counter-shape .shape-1, .single-counter.counter-color-2 .counter-shape .shape-2 {
+  background: var(--success);
+}
+.single-counter.counter-color-3 .counter-shape .shape-1, .single-counter.counter-color-3 .counter-shape .shape-2 {
+  background: var(--info);
+}
+.single-counter.counter-color-4 .counter-shape .shape-1, .single-counter.counter-color-4 .counter-shape .shape-2 {
+  background: var(--caution);
+}
+
+/*===== COUNTER STYLE =====*/
+.circle-progress .circles-text {
+  font-size: 24px !important;
+  font-weight: 700;
+  color: var(--black);
+}
+.circle-progress .circle-progress-content {
+  padding-left: 30px;
+}
+.circle-progress .circle-progress-content .circle-progress-title {
+  font-size: 18px;
+  line-height: 30px;
+}
+.circle-progress .ldBar.label-center > .ldBar-label {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+/*# sourceMappingURL=progress-bars.css.map */

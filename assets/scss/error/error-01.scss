@@ -1,0 +1,80 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== ERROR ONE Style =====*/
+
+.error-content {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  & .error-404 {
+    font-size: 98px;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 90px;
+  }
+  & .sub-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--black);
+    margin-top: 16px;
+  }
+  & .text {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dark-3);
+    margin-top: 8px;
+  }
+  & .error-form {
+    max-width: 410px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+
+    & i {
+      position: absolute;
+      top: 12px;
+      left: 20px;
+      font-size: 24px;
+      color: var(--primary);
+    }
+
+    & input {
+      width: 100%;
+      height: 46px;
+      padding-left: 60px;
+      padding-right: 30px;
+      border-radius: 50px;
+      border: 2px solid var(--gray-4);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--dark-3);
+
+      &:focus {
+        border-color: var(--primary);
+      }
+    }
+  }
+
+  & .error-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media #{$xs} {
+      position: relative;
+      width: 100%;
+      margin-top: 8px;
+    }
+  }
+
+  .primary-btn {
+    @extend %primary-btn;
+
+    @media #{$xs} {
+      width: 100%;
+    }
+  }
+}

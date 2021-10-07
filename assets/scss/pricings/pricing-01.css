@@ -1,0 +1,93 @@
+/* ===== Buttons Css ===== */
+.pricing-style-one .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.pricing-style-one .active.primary-btn, .pricing-style-one .primary-btn:hover, .pricing-style-one .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-one .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== PRICING STYLE ONE =====*/
+.pricing-one {
+  padding: 100px 0;
+}
+
+.pricing-style-one {
+  box-shadow: var(--shadow-4);
+  padding: 45px 30px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--white);
+  margin-top: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .pricing-style-one {
+    padding: 35px 30px;
+  }
+}
+.pricing-style-one .sub-title {
+  font-size: 16px;
+  color: var(--black);
+  position: relative;
+  padding: 6px 20px;
+  display: inline-block;
+  border: 2px solid var(--primary);
+  border-radius: 30px;
+}
+.pricing-style-one .price {
+  display: block;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 80px;
+  margin-top: 25px;
+  color: var(--black);
+}
+@media (max-width: 767px) {
+  .pricing-style-one .price {
+    font-size: 45px;
+    margin-top: 16px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pricing-style-one .price {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+}
+.pricing-style-one .year {
+  color: var(--dark-3);
+  margin-top: 3px;
+}
+.pricing-style-one .pricing-list {
+  margin-top: 40px;
+}
+.pricing-style-one .pricing-list li {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.pricing-style-one .pricing-list li i {
+  color: var(--primary);
+  margin-right: 8px;
+}
+.pricing-style-one .pricing-btn {
+  margin-top: 42px;
+}
+.pricing-style-one .bottom-shape {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 101%;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=pricing-01.css.map */

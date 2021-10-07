@@ -1,0 +1,161 @@
+/* ===== Buttons Css ===== */
+.slider-area.slider-two .slider-content .slider-btn li .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.slider-area.slider-two .slider-content .slider-btn li .active.primary-btn, .slider-area.slider-two .slider-content .slider-btn li .primary-btn:hover, .slider-area.slider-two .slider-content .slider-btn li .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.slider-area.slider-two .slider-content .slider-btn li .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+.slider-area.slider-two .slider-content .slider-btn li .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.slider-area.slider-two .slider-content .slider-btn li .active.primary-btn-outline, .slider-area.slider-two .slider-content .slider-btn li .primary-btn-outline:hover, .slider-area.slider-two .slider-content .slider-btn li .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.slider-area.slider-two .slider-content .slider-btn li .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===== SLIDER TWO =====*/
+.slider-area.slider-two {
+  background-color: var(--light-2);
+  position: relative;
+}
+.slider-area.slider-two .slider-content {
+  padding-top: 232px;
+  padding-bottom: 232px;
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .slider-area.slider-two .slider-content {
+    padding-top: 132px;
+    padding-bottom: 132px;
+  }
+}
+.slider-area.slider-two .slider-content .slider-title {
+  font-size: 44px;
+  line-height: 55px;
+  color: var(--black);
+  padding: 0 5px;
+}
+@media (max-width: 767px) {
+  .slider-area.slider-two .slider-content .slider-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.slider-area.slider-two .slider-content .text {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.slider-area.slider-two .slider-content .slider-btn {
+  margin-top: 14px;
+}
+.slider-area.slider-two .slider-content .slider-btn li {
+  display: inline-block;
+  margin: 10px 8px 0;
+}
+@media (max-width: 767px) {
+  .slider-area.slider-two .slider-content .slider-btn li {
+    margin: 10px 3px 0;
+  }
+}
+.slider-area.slider-two .carousel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-area.slider-two .carousel {
+    position: relative;
+    height: 700px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .slider-area.slider-two .carousel {
+    position: relative;
+    height: 400px;
+    width: 100%;
+  }
+}
+.slider-area.slider-two .carousel .carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+.slider-area.slider-two .carousel .carousel-inner .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.slider-area.slider-two .carousel .carousel-control-prev, .slider-area.slider-two .carousel .carousel-control-next {
+  top: 30%;
+  width: auto;
+  height: auto;
+  font-size: 32px;
+  color: var(--white);
+  bottom: auto;
+  left: 8px;
+  right: auto;
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .slider-area.slider-two .carousel .carousel-control-prev, .slider-area.slider-two .carousel .carousel-control-next {
+    font-size: 24px;
+  }
+}
+.slider-area.slider-two .carousel .carousel-control-next {
+  top: auto;
+  bottom: 30%;
+}
+.slider-area.slider-two .carousel .carousel-indicators {
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 20px;
+  bottom: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 767px) {
+  .slider-area.slider-two .carousel .carousel-indicators {
+    left: 16px;
+  }
+}
+.slider-area.slider-two .carousel .carousel-indicators li {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  border: 0;
+  margin: 5px 0;
+}
+.slider-area.slider-two .carousel .carousel-indicators li.active {
+  background-color: var(--white);
+  height: 16px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=slider-02.css.map */

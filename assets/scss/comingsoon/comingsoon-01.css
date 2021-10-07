@@ -1,0 +1,143 @@
+/* ===== Buttons Css ===== */
+.coming-soon-one .coming-soon-content .coming-soon-btn .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.coming-soon-one .coming-soon-content .coming-soon-btn .active.primary-btn, .coming-soon-one .coming-soon-content .coming-soon-btn .primary-btn:hover, .coming-soon-one .coming-soon-content .coming-soon-btn .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.coming-soon-one .coming-soon-content .coming-soon-btn .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+.coming-soon-one .coming-soon-content .coming-soon-btn .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.coming-soon-one .coming-soon-content .coming-soon-btn .active.primary-btn-outline, .coming-soon-one .coming-soon-content .coming-soon-btn .primary-btn-outline:hover, .coming-soon-one .coming-soon-content .coming-soon-btn .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.coming-soon-one .coming-soon-content .coming-soon-btn .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===== COMING SOON ONE =====*/
+.coming-soon-one {
+  height: 700px;
+}
+.coming-soon-one .coming-soon-content .countdown ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.coming-soon-one .coming-soon-content .countdown ul li {
+  padding: 0 45px;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .coming-soon-one .coming-soon-content .countdown ul li {
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 767px) {
+  .coming-soon-one .coming-soon-content .countdown ul li {
+    padding: 0 10px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .coming-soon-one .coming-soon-content .countdown ul li {
+    padding: 0 15px;
+  }
+}
+.coming-soon-one .coming-soon-content .countdown ul li .count {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 60px;
+  color: var(--white);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .coming-soon-one .coming-soon-content .countdown ul li .count {
+    font-size: 55px;
+  }
+}
+@media (max-width: 767px) {
+  .coming-soon-one .coming-soon-content .countdown ul li .count {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .coming-soon-one .coming-soon-content .countdown ul li .count {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+.coming-soon-one .coming-soon-content .countdown ul li .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: var(--white);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .coming-soon-one .coming-soon-content .countdown ul li .text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .coming-soon-one .coming-soon-content .countdown ul li .text {
+    font-size: 14px;
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .coming-soon-one .coming-soon-content .countdown ul li .text {
+    font-size: 18px;
+    margin-top: 0;
+  }
+}
+.coming-soon-one .coming-soon-content .coming-soon-title {
+  font-size: 72px;
+  color: var(--white);
+  line-height: 85px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .coming-soon-one .coming-soon-content .coming-soon-title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .coming-soon-one .coming-soon-content .coming-soon-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+.coming-soon-one .coming-soon-content .coming-soon-btn {
+  padding-top: 20px;
+}
+.coming-soon-one .coming-soon-content .coming-soon-btn ul li {
+  display: inline-block;
+  margin-left: 18px;
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .coming-soon-one .coming-soon-content .coming-soon-btn ul li {
+    margin-left: 0;
+  }
+}
+.coming-soon-one .coming-soon-content .coming-soon-btn ul li:first-child {
+  margin-left: 0;
+}
+
+/*# sourceMappingURL=comingsoon-01.css.map */

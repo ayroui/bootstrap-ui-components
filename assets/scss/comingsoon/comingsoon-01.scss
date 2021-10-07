@@ -1,0 +1,123 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== COMING SOON ONE =====*/
+
+.coming-soon-one {
+  height: 700px;
+
+  & .coming-soon-content {
+    & .countdown {
+      & ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & li {
+          padding: 0 45px;
+          text-align: center;
+
+          @media #{$lg} {
+            padding: 0px 30px;
+          }
+
+          @media #{$xs} {
+            padding: 0 10px;
+          }
+
+          @media #{$sm} {
+            padding: 0 15px;
+          }
+
+          & .count {
+            font-size: 52px;
+            font-weight: 600;
+            line-height: 60px;
+            color: var(--white);
+
+            @media #{$lg, $md} {
+              font-size: 55px;
+            }
+
+            @media #{$xs} {
+              font-size: 24px;
+              line-height: 30px;
+            }
+
+            @media #{$sm} {
+              font-size: 36px;
+              line-height: 40px;
+            }
+          }
+
+          & .text {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+            color: var(--white);
+
+            @media #{$lg, $md} {
+              font-size: 18px;
+            }
+
+            @media #{$xs} {
+              font-size: 14px;
+              margin-top: 0;
+            }
+
+            @media #{$sm} {
+              font-size: 18px;
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+
+    & .coming-soon-title {
+      font-size: 72px;
+      color: var(--white);
+      line-height: 85px;
+      text-transform: uppercase;
+      margin-top: 30px;
+
+      @media #{$xs} {
+        font-size: 38px;
+        line-height: 45px;
+      }
+      @media #{$xs} {
+        font-size: 60px;
+        line-height: 70px;
+      }
+    }
+
+    & .coming-soon-btn {
+      padding-top: 20px;
+
+      & ul {
+        & li {
+          display: inline-block;
+          margin-left: 18px;
+          margin-top: 20px;
+
+          @media #{$xs} {
+            margin-left: 0;
+          }
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+
+      & .primary-btn {
+        @extend %primary-btn;
+      }
+      & .primary-btn-outline {
+        @extend %primary-btn-outline;
+      }
+    }
+  }
+}

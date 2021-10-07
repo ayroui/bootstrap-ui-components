@@ -1,0 +1,161 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===========================
+  SING IN SING UP css 
+===========================*/
+
+.signin-two {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--light-2);
+
+  & .form-input {
+    margin-top: 16px;
+
+    & .main-btn {
+      width: 100%;
+    }
+
+    & .text {
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--dark-3);
+
+      & a {
+        color: var(--primary);
+      }
+    }
+  }
+
+  .light-rounded-buttons {
+    margin-top: 20px;
+
+    .primary-btn {
+      @extend %primary-btn;
+    }
+  }
+
+  .form-input {
+    .help-block {
+      margin-top: 2px;
+
+      & .list-unstyled {
+        & li {
+          font-size: 12px;
+          line-height: 16px;
+          color: var(--error);
+        }
+      }
+    }
+
+    & label {
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--dark-3);
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    & .input-items {
+      position: relative;
+
+      & input,
+      & textarea {
+        width: 100%;
+        height: 44px;
+        border: 2px solid;
+        padding-left: 44px;
+        padding-right: 12px;
+        position: relative;
+        font-size: 16px;
+      }
+
+      & textarea {
+        padding-top: 8px;
+        height: 130px;
+        resize: none;
+      }
+
+      & i {
+        position: absolute;
+        top: 11px;
+        left: 13px;
+        font-size: 20px;
+        z-index: 9;
+      }
+
+      &.default {
+        & input,
+        & textarea {
+          border-color: var(--gray-4);
+          color: var(--dark-3);
+
+          &:focus {
+            border-color: var(--primary);
+          }
+
+          @include placeholder {
+            color: var(--dark-3);
+            opacity: 1;
+          }
+        }
+
+        & i {
+          color: var(--dark-3);
+        }
+      }
+
+      &.error {
+        & input,
+        & textarea {
+          border-color: var(--error);
+          color: var(--error);
+
+          @include placeholder {
+            color: var(--error);
+            opacity: 1;
+          }
+        }
+
+        & i {
+          color: var(--error);
+        }
+      }
+    }
+  }
+
+  .form-style-two {
+    & .form-input {
+      & .input-items {
+        & input,
+        & textarea {
+          border-radius: 5px;
+          padding-left: 12px;
+          padding-right: 44px;
+        }
+        & i {
+          left: auto;
+          right: 13px;
+        }
+      }
+    }
+  }
+}
+
+.signin-content {
+  margin-top: 16px;
+
+  & .signin-title {
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--black);
+  }
+  & .text {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dark-3);
+    margin-top: 8px;
+  }
+}

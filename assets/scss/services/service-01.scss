@@ -1,0 +1,148 @@
+@import "../variables";
+@import "../mixin";
+
+/*===========================
+  services css 
+===========================*/
+
+.services-one {
+  position: relative;
+  background-color: var(--light-2);
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  .section-title {
+    padding-bottom: 10px;
+
+    & .title {
+      font-size: 45px;
+      font-weight: 600;
+      line-height: 55px;
+      color: var(--black);
+      margin-bottom: 16px;
+
+      @media #{$xs} {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+
+    p {
+      color: var(--dark-3);
+    }
+  }
+
+  & .services-content {
+    margin-top: 40px;
+    display: inline-block;
+
+    & .services-icon {
+      height: 80px;
+      width: 80px;
+      line-height: 80px;
+      text-align: center;
+      border-radius: 12px;
+      background-color: var(--primary);
+      color: var(--white);
+      font-size: 35px;
+      float: left;
+      margin-right: 20px;
+      @include transition(0.3s);
+    }
+
+    &:hover {
+      .services-icon {
+        background-color: var(--primary-dark);
+        color: var(--white);
+      }
+    }
+
+    & .media-body {
+      padding-left: 100px;
+
+      @media #{$laptop} {
+        padding-right: 10px;
+      }
+
+      @media #{$xs} {
+        padding-left: 0;
+      }
+
+      @media #{$sm} {
+        padding-left: 0px;
+        padding-top: 0;
+      }
+
+      & .services-title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+        color: var(--black);
+
+        @media #{$lg} {
+          font-size: 22px;
+        }
+      }
+
+      & .text {
+        color: var(--dark-3);
+        margin-top: 8px;
+      }
+    }
+  }
+
+  & .services-image {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+
+    @media #{$laptop} {
+      width: 35%;
+    }
+
+    @media #{$lg} {
+      width: 34%;
+    }
+
+    @media #{$md} {
+      position: relative;
+      width: 720px;
+      margin: 0 auto;
+    }
+
+    @media #{$xs} {
+      position: relative;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 16px;
+      margin: 0 auto;
+    }
+
+    @media #{$sm} {
+      position: relative;
+      width: 540px;
+      margin: 0 auto;
+    }
+
+    & .image {
+      max-width: 400px;
+      width: 100%;
+
+      @media #{$md} {
+        margin: 0 auto;
+        padding-top: 50px;
+      }
+
+      @media #{$xs} {
+        margin: 0 auto;
+        padding-top: 50px;
+      }
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}

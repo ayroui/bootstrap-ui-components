@@ -1,0 +1,115 @@
+/*===== FOOTER TWO =====*/
+.footer-two {
+  background-color: var(--light-2);
+}
+.footer-two .f-about {
+  margin-top: 30px;
+}
+.footer-two .f-about .text {
+  margin-top: 20px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) {
+  .footer-two .f-about {
+    padding-right: 200px;
+  }
+}
+.footer-two .footer-widget {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-two .footer-widget {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-two .footer-widget {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+}
+.footer-two .footer-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: var(--black);
+  position: relative;
+}
+.footer-two .footer-support {
+  padding-top: 21px;
+}
+.footer-two .footer-support span {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+  font-weight: 500;
+  margin-top: 9px;
+  display: block;
+}
+@media (max-width: 767px) {
+  .footer-two .footer-support span {
+    display: block;
+  }
+}
+.footer-two .social {
+  padding-top: 27px;
+}
+.footer-two .social li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.footer-two .social li:last-child {
+  margin-right: 0;
+}
+.footer-two .social a {
+  font-size: 18px;
+  color: var(--dark-3);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.footer-two .social a:hover {
+  color: var(--primary);
+}
+.footer-two .footer-link {
+  margin-top: 32px;
+}
+.footer-two .footer-link ul {
+  margin-top: 8px;
+}
+.footer-two .footer-link ul a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  margin-top: 16px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media (max-width: 767px) {
+  .footer-two .footer-link ul a {
+    margin-top: 12px;
+  }
+}
+.footer-two .footer-link ul a:hover {
+  color: var(--primary);
+}
+.footer-two .footer-copyright {
+  border-top: 1px solid var(--gray-4);
+}
+.footer-two .copyright {
+  padding-bottom: 23px;
+  padding-top: 13px;
+}
+.footer-two .copyright .text {
+  color: var(--dark-3);
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=footer-02.css.map */

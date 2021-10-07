@@ -1,0 +1,86 @@
+/*===========================
+  Section Title Four CSS
+===========================*/
+.section-title-four {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 5;
+  margin-top: 12px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title-four {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .section-title-four {
+    margin-bottom: 35px;
+  }
+}
+.section-title-four span {
+  text-transform: uppercase;
+  color: var(--primary);
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .section-title-four span {
+    margin-bottom: 15px;
+  }
+}
+.section-title-four h2 {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title-four h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .section-title-four h2 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+.section-title-four h3 {
+  font-size: 3.8rem;
+  line-height: 3.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: var(--gray-3);
+  z-index: -1;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--gray-3);
+  opacity: 0.5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title-four h3 {
+    font-size: 3.3rem;
+    line-height: 3.5rem;
+    top: -18px;
+  }
+}
+@media (max-width: 767px) {
+  .section-title-four h3 {
+    font-size: 2.7rem;
+    line-height: 3.2rem;
+    top: -17px;
+  }
+}
+.section-title-four p {
+  color: var(--dark-3);
+}
+
+/*# sourceMappingURL=section-title-04.css.map */

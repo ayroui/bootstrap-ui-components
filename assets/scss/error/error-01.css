@@ -1,0 +1,87 @@
+/* ===== Buttons Css ===== */
+.error-content .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.error-content .active.primary-btn, .error-content .primary-btn:hover, .error-content .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.error-content .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== ERROR ONE Style =====*/
+.error-content {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.error-content .error-404 {
+  font-size: 98px;
+  font-weight: 600;
+  color: var(--black);
+  line-height: 90px;
+}
+.error-content .sub-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--black);
+  margin-top: 16px;
+}
+.error-content .text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  margin-top: 8px;
+}
+.error-content .error-form {
+  max-width: 410px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 40px;
+  position: relative;
+}
+.error-content .error-form i {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  font-size: 24px;
+  color: var(--primary);
+}
+.error-content .error-form input {
+  width: 100%;
+  height: 46px;
+  padding-left: 60px;
+  padding-right: 30px;
+  border-radius: 50px;
+  border: 2px solid var(--gray-4);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-3);
+}
+.error-content .error-form input:focus {
+  border-color: var(--primary);
+}
+.error-content .error-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (max-width: 767px) {
+  .error-content .error-btn {
+    position: relative;
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .error-content .primary-btn {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=error-01.css.map */

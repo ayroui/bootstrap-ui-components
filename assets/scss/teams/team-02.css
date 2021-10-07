@@ -1,0 +1,98 @@
+/*===========================
+  teams css 
+===========================*/
+.team-area {
+  margin-bottom: 70px;
+}
+
+.team-style-two {
+  position: relative;
+  margin-top: 30px;
+}
+.team-style-two .team-image {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.team-style-two .team-image img {
+  width: 100%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.team-style-two:hover .team-image img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.team-style-two .team-content {
+  padding: 16px;
+  box-shadow: var(--shadow-2);
+  border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  width: 90%;
+  bottom: 20px;
+  background-color: var(--primary);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.team-style-two .team-content:hover {
+  background-position: right center;
+}
+.team-style-two .team-content .name {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--white);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .team-style-two .team-content .name {
+    font-size: 20px;
+  }
+}
+.team-style-two .team-content .sub-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+  opacity: 0.7;
+  margin-top: 5px;
+  display: block;
+}
+.team-style-two .team-content .social {
+  margin-top: 12px;
+}
+.team-style-two .team-content .social li {
+  display: inline-block;
+  margin: 0 8px;
+}
+.team-style-two .team-content .social li a {
+  font-size: 20px;
+  color: var(--white);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.team-style-two .team-content .social li a:hover {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=team-02.css.map */

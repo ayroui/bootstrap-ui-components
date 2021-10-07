@@ -1,0 +1,231 @@
+/* ===== Buttons Css ===== */
+.contact-form .single-form .input-form .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.contact-form .single-form .input-form .active.primary-btn, .contact-form .single-form .input-form .primary-btn:hover, .contact-form .single-form .input-form .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.contact-form .single-form .input-form .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===========================
+    contact-01 css 
+===========================*/
+.contact-area {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.contact-area .mt-15 {
+  margin-top: 15px;
+}
+.contact-area .section-title .title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 55px;
+}
+@media (max-width: 767px) {
+  .contact-area .section-title .title {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+.contact-form .single-form label {
+  font-size: 12px;
+  color: var(--dark-2);
+  line-height: 18px;
+  margin-left: 44px;
+}
+.contact-form .single-form .input-form {
+  position: relative;
+}
+.contact-form .single-form .input-form i {
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: var(--dark-3);
+}
+.contact-form .single-form .input-form textarea, .contact-form .single-form .input-form input {
+  width: 100%;
+  height: 44px;
+  padding-left: 45px;
+  padding-right: 30px;
+  color: var(--dark-3);
+  font-size: 16px;
+  border: 0;
+  border-bottom: 1px solid var(--gray-4);
+  font-weight: 500;
+}
+.contact-form .single-form .input-form textarea::placeholder, .contact-form .single-form .input-form input::placeholder {
+  opacity: 1;
+  color: var(--dark-3);
+}
+.contact-form .single-form .input-form textarea {
+  padding-top: 10px;
+}
+.form-input .help-block {
+  margin-top: 2px;
+}
+.form-input .help-block .list-unstyled li {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--error);
+}
+.form-input label {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--dark-3);
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.form-input .input-items {
+  position: relative;
+}
+.form-input .input-items input, .form-input .input-items textarea {
+  width: 100%;
+  height: 44px;
+  border: 2px solid;
+  padding-left: 44px;
+  padding-right: 12px;
+  position: relative;
+  font-size: 16px;
+}
+.form-input .input-items textarea {
+  padding-top: 8px;
+  height: 130px;
+  resize: none;
+}
+.form-input .input-items i {
+  position: absolute;
+  top: 11px;
+  left: 13px;
+  font-size: 20px;
+  z-index: 9;
+}
+.form-input .input-items.default input, .form-input .input-items.default textarea {
+  border-color: var(--gray-4);
+  color: var(--dark-3);
+}
+.form-input .input-items.default input:focus, .form-input .input-items.default textarea:focus {
+  border-color: var(--primary);
+}
+.form-input .input-items.default input::placeholder, .form-input .input-items.default textarea::placeholder {
+  color: var(--dark-3);
+  opacity: 1;
+}
+.form-input .input-items.default i {
+  color: var(--dark-3);
+}
+.form-input .input-items.active input, .form-input .input-items.active textarea {
+  border-color: var(--primary-dark);
+  color: var(--black);
+}
+.form-input .input-items.active input::placeholder, .form-input .input-items.active textarea::placeholder {
+  color: var(--black);
+  opacity: 1;
+}
+.form-input .input-items.active i {
+  color: var(--primary-dark);
+}
+.form-input .input-items.error input, .form-input .input-items.error textarea {
+  border-color: var(--error);
+  color: var(--error);
+}
+.form-input .input-items.error input::placeholder, .form-input .input-items.error textarea::placeholder {
+  color: var(--error);
+  opacity: 1;
+}
+.form-input .input-items.error i {
+  color: var(--error);
+}
+.form-input .input-items.success input, .form-input .input-items.success textarea {
+  border-color: var(--success);
+  color: var(--success);
+}
+.form-input .input-items.success input::placeholder, .form-input .input-items.success textarea::placeholder {
+  color: var(--success);
+  opacity: 1;
+}
+.form-input .input-items.success i {
+  color: var(--success);
+}
+.form-input .input-items.disabled input, .form-input .input-items.disabled textarea {
+  border-color: var(--dark-2);
+  color: var(--dark-3);
+  background: none;
+}
+.form-input .input-items.disabled input::placeholder, .form-input .input-items.disabled textarea::placeholder {
+  color: var(--dark-3);
+  opacity: 1;
+}
+.form-input .input-items.disabled i {
+  color: var(--dark-3);
+}
+
+.form-style-four .form-input label {
+  padding-left: 44px;
+  margin-bottom: 0;
+}
+.form-style-four .form-input .input-items input, .form-style-four .form-input .input-items textarea {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.contact-info ul li .single-info {
+  position: relative;
+  margin-top: 19px;
+}
+.contact-info ul li .single-info .info-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contact-info ul li .single-info .info-icon i {
+  color: var(--dark-3);
+  font-size: 18px;
+  line-height: 24px;
+}
+.contact-info ul li .single-info .info-content {
+  padding-left: 30px;
+}
+.contact-info ul li .single-info .info-content .text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-weight: 500;
+}
+.contact-info .social li {
+  display: inline-block;
+  margin-right: 12px;
+}
+.contact-info .social li a {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 38px;
+  border: 1px solid rgba(0, 0, 0, 0.096);
+  text-align: center;
+  border-radius: 5px;
+  color: var(--dark-3);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.contact-info .social li a:hover {
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: transparent;
+}
+
+/*# sourceMappingURL=contact-01.css.map */

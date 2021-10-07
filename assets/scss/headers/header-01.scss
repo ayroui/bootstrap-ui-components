@@ -1,0 +1,102 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== HEADER ONE =====*/
+
+.header-one {
+  position: relative;
+
+  & .header-content-area {
+    background-color: var(--primary);
+    position: relative;
+    padding: 130px 0;
+
+    @media #{$md} {
+      padding: 100px 0;
+    }
+
+    @media #{$xs} {
+      padding: 60px 0;
+    }
+
+
+    @media #{$desktop} {
+      height: 900px;
+    }
+
+    @media #{$xs} {
+      height: 550px;
+    }
+
+    .primary-btn-outline {
+      @extend %primary-btn-outline;
+      border-color: var(--white);
+      background-color: var(--white);
+      color: var(--primary);
+
+      &:hover {
+        background-color: transparent;
+        border-color: var(--white);
+        color: var(--white);
+      }
+    }
+  }
+
+  & .header-wrapper {
+    position: relative;
+  }
+
+  & .header-content {
+    max-width: 540px;
+    position: relative;
+    z-index: 5;
+  }
+
+  & .header-title {
+    color: var(--white);
+    font-weight: 800;
+  }
+
+  & .text-lg {
+    color: var(--white);
+    font-weight: 300;
+    margin-top: 16px;
+  }
+
+  & .header-btn {
+    margin-top: 40px;
+  }
+
+  & .header-image {
+    text-align: center;
+
+    & .image {
+      max-width: 730px;
+
+      @media #{$laptop} {
+        max-width: 600px;
+      }
+
+      @media #{$lg} {
+        max-width: 550px;
+      }
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+
+  & .header-shape {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    & img {
+      width: 100%;
+    }
+  }
+}

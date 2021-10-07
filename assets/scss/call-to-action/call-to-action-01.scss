@@ -1,0 +1,33 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== call action one =====*/
+
+.call-action-one {
+  background-color: var(--light-2);
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  & .call-action-content {
+    & .call-action-text {
+      margin-top: 50px;
+
+      & .action-title {
+        font-weight: 600;
+        color: var(--black);
+      }
+      & .text-lg {
+        color: var(--dark-3);
+        margin-top: 16px;
+      }
+    }
+    & .call-action-btn {
+      margin-top: 50px;
+
+      .primary-btn {
+        @extend %primary-btn;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+/*===========================
+  Section Title One CSS
+===========================*/
+.section-title-one {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title-one {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .section-title-one {
+    margin-bottom: 35px;
+  }
+}
+.section-title-one h2 {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title-one h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .section-title-one h2 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+
+/*# sourceMappingURL=section-title-01.css.map */

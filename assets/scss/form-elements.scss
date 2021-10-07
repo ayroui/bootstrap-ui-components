@@ -1,0 +1,235 @@
+@import "./variables";
+@import "./mixin";
+
+/*===========================
+    06.FORM ELEMENTS css 
+===========================*/
+
+.form-elements-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--dark-3);
+
+  @media #{$xs} {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.form-input {
+  .help-block {
+    margin-top: 2px;
+
+    & .list-unstyled {
+      & li {
+        font-size: 12px;
+        line-height: 16px;
+        color: var(--error);
+      }
+    }
+  }
+
+  & label {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--dark-3);
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+
+  & .input-items {
+    position: relative;
+
+    & input,
+    & textarea {
+      width: 100%;
+      height: 44px;
+      border: 2px solid;
+      padding-left: 44px;
+      padding-right: 12px;
+      position: relative;
+      font-size: 16px;
+
+      &:focus {
+        box-shadow: var(--shadow-4);
+      }
+    }
+
+    & textarea {
+      padding-top: 8px;
+      height: 130px;
+      resize: none;
+    }
+
+    & i {
+      position: absolute;
+      top: 11px;
+      left: 13px;
+      font-size: 20px;
+      z-index: 9;
+    }
+
+    &.default {
+      & input,
+      & textarea {
+        border-color: var(--gray-3);
+        color: var(--dark-3);
+
+        &:focus {
+          border-color: var(--primary);
+        }
+
+        @include placeholder {
+          color: var(--dark-3);
+          opacity: 1;
+        }
+      }
+
+      & i {
+        color: var(--dark-3);
+      }
+    }
+
+    &.active {
+      & input,
+      & textarea {
+        border-color: var(--primary);
+        color: var(--black);
+
+        @include placeholder {
+          color: var(--black);
+          opacity: 1;
+        }
+      }
+
+      & i {
+        color: var(--primary);
+      }
+    }
+
+    &.error {
+      & input,
+      & textarea {
+        border-color: var(--error);
+        color: var(--error);
+
+        @include placeholder {
+          color: var(--error);
+          opacity: 1;
+        }
+      }
+
+      & i {
+        color: var(--error);
+      }
+    }
+
+    &.success {
+      & input,
+      & textarea {
+        border-color: var(--success);
+        color: var(--success);
+
+        @include placeholder {
+          color: var(--success);
+          opacity: 1;
+        }
+      }
+
+      & i {
+        color: var(--success);
+      }
+    }
+
+    &.disabled {
+      & input,
+      & textarea {
+        border-color: var(--gray-3);
+        color: var(--dark-3);
+        background: none;
+
+        @include placeholder {
+          color: var(--dark-3);
+          opacity: 1;
+        }
+      }
+
+      & i {
+        color: var(--dark-3);
+      }
+    }
+  }
+}
+
+.form-style-two {
+  & .form-input {
+    & .input-items {
+      & input,
+      & textarea {
+        border-radius: 5px;
+        padding-left: 12px;
+        padding-right: 44px;
+      }
+      & i {
+        left: auto;
+        right: 13px;
+      }
+    }
+  }
+}
+.form-style-three {
+  & .form-input {
+    text-align: center;
+
+    & .input-items {
+      & input,
+      & textarea {
+        border-radius: 50px;
+        text-align: center;
+      }
+    }
+  }
+}
+.form-style-four {
+  & .form-input {
+    & label {
+      padding-left: 44px;
+      margin-bottom: 0;
+    }
+
+    & .input-items {
+      & input,
+      & textarea {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+  }
+}
+.form-style-five {
+  & .form-input {
+    position: relative;
+
+    & label {
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      background-color: var(--white);
+      z-index: 5;
+      padding: 0 5px;
+    }
+
+    & .input-items {
+      & input,
+      & textarea {
+        border-radius: 5px;
+      }
+    }
+  }
+}

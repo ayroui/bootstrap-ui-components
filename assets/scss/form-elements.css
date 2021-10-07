@@ -1,0 +1,166 @@
+/*===========================
+    06.FORM ELEMENTS css 
+===========================*/
+.form-elements-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--dark-3);
+}
+@media (max-width: 767px) {
+  .form-elements-title {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.form-input .help-block {
+  margin-top: 2px;
+}
+.form-input .help-block .list-unstyled li {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--error);
+}
+.form-input label {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--dark-3);
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.form-input .input-items {
+  position: relative;
+}
+.form-input .input-items input, .form-input .input-items textarea {
+  width: 100%;
+  height: 44px;
+  border: 2px solid;
+  padding-left: 44px;
+  padding-right: 12px;
+  position: relative;
+  font-size: 16px;
+}
+.form-input .input-items input:focus, .form-input .input-items textarea:focus {
+  box-shadow: var(--shadow-4);
+}
+.form-input .input-items textarea {
+  padding-top: 8px;
+  height: 130px;
+  resize: none;
+}
+.form-input .input-items i {
+  position: absolute;
+  top: 11px;
+  left: 13px;
+  font-size: 20px;
+  z-index: 9;
+}
+.form-input .input-items.default input, .form-input .input-items.default textarea {
+  border-color: var(--gray-3);
+  color: var(--dark-3);
+}
+.form-input .input-items.default input:focus, .form-input .input-items.default textarea:focus {
+  border-color: var(--primary);
+}
+.form-input .input-items.default input::placeholder, .form-input .input-items.default textarea::placeholder {
+  color: var(--dark-3);
+  opacity: 1;
+}
+.form-input .input-items.default i {
+  color: var(--dark-3);
+}
+.form-input .input-items.active input, .form-input .input-items.active textarea {
+  border-color: var(--primary);
+  color: var(--black);
+}
+.form-input .input-items.active input::placeholder, .form-input .input-items.active textarea::placeholder {
+  color: var(--black);
+  opacity: 1;
+}
+.form-input .input-items.active i {
+  color: var(--primary);
+}
+.form-input .input-items.error input, .form-input .input-items.error textarea {
+  border-color: var(--error);
+  color: var(--error);
+}
+.form-input .input-items.error input::placeholder, .form-input .input-items.error textarea::placeholder {
+  color: var(--error);
+  opacity: 1;
+}
+.form-input .input-items.error i {
+  color: var(--error);
+}
+.form-input .input-items.success input, .form-input .input-items.success textarea {
+  border-color: var(--success);
+  color: var(--success);
+}
+.form-input .input-items.success input::placeholder, .form-input .input-items.success textarea::placeholder {
+  color: var(--success);
+  opacity: 1;
+}
+.form-input .input-items.success i {
+  color: var(--success);
+}
+.form-input .input-items.disabled input, .form-input .input-items.disabled textarea {
+  border-color: var(--gray-3);
+  color: var(--dark-3);
+  background: none;
+}
+.form-input .input-items.disabled input::placeholder, .form-input .input-items.disabled textarea::placeholder {
+  color: var(--dark-3);
+  opacity: 1;
+}
+.form-input .input-items.disabled i {
+  color: var(--dark-3);
+}
+
+.form-style-two .form-input .input-items input, .form-style-two .form-input .input-items textarea {
+  border-radius: 5px;
+  padding-left: 12px;
+  padding-right: 44px;
+}
+.form-style-two .form-input .input-items i {
+  left: auto;
+  right: 13px;
+}
+
+.form-style-three .form-input {
+  text-align: center;
+}
+.form-style-three .form-input .input-items input, .form-style-three .form-input .input-items textarea {
+  border-radius: 50px;
+  text-align: center;
+}
+
+.form-style-four .form-input label {
+  padding-left: 44px;
+  margin-bottom: 0;
+}
+.form-style-four .form-input .input-items input, .form-style-four .form-input .input-items textarea {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.form-style-five .form-input {
+  position: relative;
+}
+.form-style-five .form-input label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: var(--white);
+  z-index: 5;
+  padding: 0 5px;
+}
+.form-style-five .form-input .input-items input, .form-style-five .form-input .input-items textarea {
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=form-elements.css.map */

@@ -1,0 +1,89 @@
+@import "../variables";
+@import "../mixin";
+
+/*===========================
+  teams css 
+===========================*/
+.team-area {
+  margin-bottom: 70px;
+}
+
+.team-style-two {
+  position: relative;
+  margin-top: 30px;
+
+  & .team-image {
+    border-radius: 8px;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      @include transition(0.3s);
+    }
+  }
+
+  &:hover {
+    .team-image {
+      img {
+        @include transform(scale(1.1));
+      }
+    }
+  }
+
+  & .team-content {
+    padding: 16px;
+    box-shadow: var(--shadow-2);
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    width: 90%;
+    bottom: 20px;
+    background-color: var(--primary);
+    @include transition(0.3s);
+    @include transform(translateX(-50%));
+
+    &:hover {
+      background-position: right center;
+    }
+
+    & .name {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 30px;
+      color: var(--white);
+      @include transition(0.3s);
+
+      @media #{$lg} {
+        font-size: 20px;
+      }
+    }
+
+    & .sub-title {
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--white);
+      opacity: 0.7;
+      margin-top: 5px;
+      display: block;
+    }
+
+    & .social {
+      margin-top: 12px;
+
+      & li {
+        display: inline-block;
+        margin: 0 8px;
+
+        & a {
+          font-size: 20px;
+          color: var(--white);
+          @include transition(0.4s);
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}

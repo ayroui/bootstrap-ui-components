@@ -1,0 +1,203 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== SLIDER ONE =====*/
+
+.slider-one {
+  & .bd-example {
+    & .carousel {
+      & .carousel-inner {
+        background-color: var(--primary);
+
+        & .carousel-item {
+          height: auto;
+          padding: 300px 0;
+          position: relative;
+
+          @media #{$md} {
+            padding: 200px 0;
+          }
+
+          @media #{$xs} {
+            padding: 150px 0;
+          }
+
+          &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: var(--primary);
+            opacity: 0.8;
+          }
+
+          @media #{$xs} {
+            height: 400px;
+          }
+
+          & .carousel-caption {
+            top: 50%;
+            bottom: auto;
+            @include transform(translateY(-50%));
+            width: 100%;
+            left: 0;
+
+            & .carousel-title {
+              font-size: 44px;
+              font-weight: 700;
+              color: var(--white);
+              line-height: 55px;
+
+              @media #{$md} {
+                font-size: 35px;
+                line-height: 42px;
+              }
+
+              @media #{$xs} {
+                font-size: 24px;
+                line-height: 32px;
+              }
+            }
+
+            .text {
+              color: var(--white);
+              display: block;
+              margin: 20px 0;
+            }
+
+            & .carousel-btn {
+              & li {
+                display: inline-block;
+                margin: 16px 8px 0;
+
+                @media #{$xs} {
+                  margin: 16px 3px 0;
+                }
+
+                .primary-btn {
+                  @extend %primary-btn;
+                  background-color: var(--white);
+                  color: var(--primary);
+                  border: 1px solid transparent;
+
+                  &:hover {
+                    background-color: transparent;
+                    border-color: var(--white);
+                    color: var(--white);
+                  }
+                }
+
+                .primary-btn-outline {
+                  @extend %primary-btn-outline;
+                  border-color: var(--white);
+                  color: var(--white);
+
+                  &:hover {
+                    border-color: transparent;
+                    background-color: var(--white);
+                    color: var(--primary);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      & .carousel-control-prev,
+      & .carousel-control-next {
+        top: 50%;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        border: 1px solid var(--white);
+        font-size: 20px;
+        color: var(--white);
+        @include transform(translateY(-50%));
+        bottom: auto;
+        left: 30px;
+        opacity: 1;
+        z-index: 99;
+        border-radius: 50%;
+        @include transition(0.4s);
+
+        &:hover {
+          background-color: var(--white);
+          color: var(--primary);
+          border-color: transparent;
+        }
+
+        @media #{$lg} {
+          left: 30px;
+        }
+
+        @media #{$md} {
+          left: 30px;
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+        }
+
+        @media #{$xs} {
+          left: 20px;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+
+      & .carousel-control-next {
+        right: 30px;
+        left: auto;
+
+        @media #{$lg} {
+          right: 40px;
+        }
+
+        @media #{$md} {
+          right: 40px;
+        }
+
+        @media #{$xs} {
+          right: 20px;
+        }
+      }
+
+      & .carousel-indicators {
+        margin-bottom: 50px;
+
+        @media #{$md} {
+          margin-bottom: 40px;
+        }
+
+        @media #{$xs} {
+          margin-bottom: 30px;
+        }
+
+        & li {
+          width: 10px;
+          height: 10px;
+          background-color: var(--white);
+          border-radius: 50px;
+          border: 0;
+          margin: 0px 5px;
+          @include transition(0.4s);
+
+          &.active {
+            width: 20px;
+            background-color: var(--white);
+            border-radius: 5px;
+          }
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

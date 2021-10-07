@@ -1,0 +1,66 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== BLOG STYLE TWO =====*/
+
+.blog-style-two {
+  margin-top: 50px;
+  box-shadow: 0px 0px 30px var(--gray-4);
+  border-radius: 8px;
+  overflow: hidden;
+
+  & .blog-image {
+    & img {
+      width: 100%;
+    }
+  }
+
+  & .blog-content {
+    padding: 35px;
+    text-align: center;
+
+    @media #{$md} {
+      padding: 25px;
+    }
+
+    @media #{$xs} {
+      padding: 20px;
+    }
+
+    & .blog-title {
+      display: block;
+      margin-bottom: 8px;
+
+      & a {
+        font-weight: 600;
+        line-height: 30px;
+        color: var(--black);
+        @include transition(0.3s);
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+
+    & span {
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--dark-3);
+      margin-top: 8px;
+      margin-right: 10px;
+      display: inline-block;
+    }
+
+    & .text {
+      color: var(--dark-3);
+      margin-top: 16px;
+    }
+
+    .primary-btn-outline {
+      margin-top: 25px;
+      @extend %primary-btn-outline;
+    }
+  }
+}

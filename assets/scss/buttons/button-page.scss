@@ -1,0 +1,57 @@
+@import "../mixin";
+@import "./buttons";
+
+.primary-btn {
+  @extend %primary-btn;
+}
+
+.primary-btn-outline {
+  @extend %primary-btn-outline;
+}
+.primary-btn-link {
+  @extend %primary-btn-link;
+}
+
+.success-btn {
+  @extend %success-btn;
+}
+
+.success-btn-outline {
+  @extend %success-btn-outline;
+}
+.success-btn-link {
+  @extend %success-btn-link;
+}
+
+.info-btn {
+  @extend %info-btn;
+}
+
+.info-btn-outline {
+  @extend %info-btn-outline;
+}
+.info-btn-link {
+  @extend %info-btn-link;
+}
+
+.caution-btn {
+  @extend %caution-btn;
+}
+
+.caution-btn-outline {
+  @extend %caution-btn-outline;
+}
+.caution-btn-link {
+  @extend %caution-btn-link;
+}
+
+.error-btn {
+  @extend %error-btn;
+}
+
+.error-btn-outline {
+  @extend %error-btn-outline;
+}
+.error-btn-link {
+  @extend %error-btn-link;
+}

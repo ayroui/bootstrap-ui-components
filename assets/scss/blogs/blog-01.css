@@ -1,0 +1,96 @@
+/*===== BLOG STYLE ONE =====*/
+.blog-style-one {
+  margin-top: 50px;
+}
+.blog-style-one .blog-image {
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+}
+.blog-style-one .blog-image .category {
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 13px;
+  padding: 7px 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 30px;
+}
+.blog-style-one .blog-image img {
+  width: 100%;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+.blog-style-one .blog-image:hover img {
+  -webkit-transform: rotate(1deg) scale(1.1);
+  -moz-transform: rotate(1deg) scale(1.1);
+  -ms-transform: rotate(1deg) scale(1.1);
+  -o-transform: rotate(1deg) scale(1.1);
+  transform: rotate(1deg) scale(1.1);
+}
+.blog-style-one .blog-content {
+  padding: 30px;
+  border: 1px solid var(--light-1);
+  border-radius: 0 0 8px 8px;
+  border-top: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-style-one .blog-content {
+    padding: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-style-one .blog-content {
+    padding: 20px;
+  }
+}
+.blog-style-one .blog-content .blog-title {
+  display: block;
+  margin-bottom: 10px;
+}
+.blog-style-one .blog-content .blog-title a {
+  font-weight: 600;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  line-height: 30px;
+}
+@media (max-width: 767px) {
+  .blog-style-one .blog-content .blog-title a {
+    line-height: 24px;
+  }
+}
+.blog-style-one .blog-content .blog-title a:hover {
+  color: var(--primary);
+}
+.blog-style-one .blog-content span {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-3);
+  margin-top: 8px;
+  margin-right: 12px;
+  display: inline-block;
+}
+.blog-style-one .blog-content .text {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.blog-style-one .blog-content .more {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 30px;
+  display: inline-block;
+}
+.blog-style-one .blog-content .more:hover {
+  color: var(--primary-dark);
+}
+
+/*# sourceMappingURL=blog-01.css.map */

@@ -1,0 +1,249 @@
+@import "../variables";
+@import "../mixin";
+
+/*===========================
+  LIST STYLES css 
+===========================*/
+
+.list-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--dark-3);
+
+  @media #{$xs} {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.list-style {
+  & .list-style-one {
+    & ul {
+      & li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 13px;
+        color: var(--black);
+
+        & span {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--black);
+          line-height: 25px;
+          margin-right: 13px;
+        }
+      }
+    }
+  }
+
+  & .list-style-two {
+    & ul {
+      & li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 13px;
+        color: var(--black);
+
+        & i {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--primary);
+          line-height: 25px;
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+
+  & .list-style-three {
+    & ul {
+      & li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 13px;
+        color: var(--black);
+
+        & i {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--info);
+          line-height: 25px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
+  & .list-style-four {
+    & ul {
+      & li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 13px;
+        color: var(--black);
+
+        & i {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--caution);
+          line-height: 25px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
+  & .list-style-five {
+    & ul {
+      & li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 13px;
+        color: var(--black);
+
+        & i {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--success);
+          line-height: 25px;
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+
+  & .list-style-six {
+    & ul {
+      & li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 13px;
+        color: var(--black);
+
+        & i {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--error);
+          line-height: 25px;
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+
+  & .list-style-seven {
+    & ul {
+      & li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 13px;
+        color: var(--black);
+
+        & i {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--success);
+          line-height: 25px;
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+
+  & .list-style-eight {
+    & ul {
+      & li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 13px;
+        color: var(--black);
+
+        & i {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--info);
+          line-height: 25px;
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+
+  & .list-style-nine {
+    & ul {
+      & li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 13px;
+        color: var(--black);
+
+        & i {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--primary);
+          line-height: 25px;
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+
+  & .list-style-ten {
+    & ul {
+      & li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 13px;
+        color: var(--black);
+
+        & i {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--primary);
+          line-height: 25px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
+  & .list-style-eleven {
+    & ul {
+      & li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 13px;
+        color: var(--black);
+
+        & i {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--primary);
+          line-height: 25px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
+  & .list-style-twenty {
+    & ul {
+      & li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 13px;
+        color: var(--black);
+
+        & span {
+          width: 12px;
+          height: 12px;
+          display: inline-block;
+          border-radius: 50%;
+          background-color: var(--black);
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}

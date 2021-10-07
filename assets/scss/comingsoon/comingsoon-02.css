@@ -1,0 +1,212 @@
+/* ===== Buttons Css ===== */
+.coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter .coming-soon-btn .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter .coming-soon-btn .active.primary-btn, .coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter .coming-soon-btn .primary-btn:hover, .coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter .coming-soon-btn .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter .coming-soon-btn .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== COMING SOON TWO =====*/
+.coming-soon-two {
+  background-color: var(--light-2);
+}
+.coming-soon-two .coming-soon-content {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.coming-soon-two .coming-soon-content .coming-soon-image {
+  position: absolute;
+}
+.coming-soon-two .coming-soon-content .coming-soon-image.image-one {
+  width: 348px;
+  left: 0;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .coming-soon-two .coming-soon-content .coming-soon-image.image-one {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .coming-soon-two .coming-soon-content .coming-soon-image.image-one {
+    width: 120px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+.coming-soon-two .coming-soon-content .coming-soon-image.image-two {
+  width: 280px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 58px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .coming-soon-two .coming-soon-content .coming-soon-image.image-two {
+    width: 220px;
+    top: 84px;
+  }
+}
+@media (max-width: 767px) {
+  .coming-soon-two .coming-soon-content .coming-soon-image.image-two {
+    width: 180px;
+    top: 52px;
+  }
+}
+.coming-soon-two .coming-soon-content .coming-soon-image.image-three {
+  width: 332px;
+  right: 0;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .coming-soon-two .coming-soon-content .coming-soon-image.image-three {
+    width: 290px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .coming-soon-two .coming-soon-content .coming-soon-image.image-three {
+    width: 120px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+.coming-soon-two .coming-soon-content .coming-soon-content-wrapper {
+  max-width: 730px;
+  margin: 0 auto;
+  border: 1px solid var(--light-3);
+  border-radius: 16px;
+  background-color: var(--white);
+  padding: 50px 140px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.068);
+}
+@media (max-width: 767px) {
+  .coming-soon-two .coming-soon-content .coming-soon-content-wrapper {
+    padding: 50px 30px;
+  }
+}
+.coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-title {
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--black);
+  margin: 16px;
+}
+@media (max-width: 767px) {
+  .coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-title {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+.coming-soon-two .coming-soon-content .coming-soon-content-wrapper .text {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--dark-3);
+  margin-top: 8px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .coming-soon-two .coming-soon-content .coming-soon-content-wrapper .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .coming-soon-two .coming-soon-content .coming-soon-content-wrapper .text {
+    font-size: 22px;
+    line-height: 35px;
+  }
+}
+.coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter {
+  max-width: 410px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter i {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  font-size: 24px;
+  color: var(--primary);
+}
+.coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter input {
+  width: 100%;
+  height: 47px;
+  padding-left: 60px;
+  padding-right: 160px;
+  border-radius: 50px;
+  border: 2px solid var(--gray-3);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-3);
+}
+@media (max-width: 767px) {
+  .coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter input {
+    padding-right: 30px;
+  }
+}
+.coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter input:focus {
+  border-color: var(--primary);
+}
+.coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter .coming-soon-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (max-width: 767px) {
+  .coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter .coming-soon-btn {
+    position: relative;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter .coming-soon-btn {
+    position: absolute;
+    margin-top: 0;
+  }
+}
+.coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter .coming-soon-btn .primary-btn {
+  border-radius: 50px;
+}
+@media (max-width: 767px) {
+  .coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter .coming-soon-btn .primary-btn {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .coming-soon-two .coming-soon-content .coming-soon-content-wrapper .coming-soon-newsletter .coming-soon-btn .primary-btn {
+    width: auto;
+  }
+}
+.coming-soon-two .coming-soon-content .coming-soon-content-wrapper .subscribe-text {
+  font-size: 14px;
+  color: var(--primary);
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+/*# sourceMappingURL=comingsoon-02.css.map */

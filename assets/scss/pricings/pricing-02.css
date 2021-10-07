@@ -1,0 +1,105 @@
+/* ===== Buttons Css ===== */
+.pricing-style-two .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.pricing-style-two .active.primary-btn, .pricing-style-two .primary-btn:hover, .pricing-style-two .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-two .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== PRICING STYLE TWO =====*/
+.pricing-two {
+  padding: 100px 0;
+}
+
+.pricing-style-two {
+  box-shadow: var(--shadow-3);
+  padding: 30px 30px 40px 30px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--white);
+  margin-top: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .pricing-style-two {
+    padding: 35px 30px;
+  }
+}
+.pricing-style-two .sub-title {
+  color: var(--black);
+  position: relative;
+  padding-bottom: 8px;
+}
+.pricing-style-two .sub-title::before {
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  margin: 0 auto;
+}
+.pricing-style-two .price {
+  display: block;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 80px;
+  margin-top: 20px;
+  color: var(--black);
+}
+@media (max-width: 767px) {
+  .pricing-style-two .price {
+    font-size: 45px;
+    margin-top: 16px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pricing-style-two .price {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+}
+.pricing-style-two .year {
+  color: var(--primary);
+  margin-top: 3px;
+}
+.pricing-style-two .pricing-baloon {
+  position: absolute;
+  top: 0;
+  right: -78px;
+  width: 156px;
+}
+.pricing-style-two .pricing-list {
+  margin-top: 40px;
+}
+.pricing-style-two .pricing-list li {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.pricing-style-two .pricing-list li i {
+  color: var(--primary);
+  margin-right: 8px;
+}
+.pricing-style-two .pricing-btn {
+  margin-top: 42px;
+}
+.pricing-style-two .bottom-shape {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 101%;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=pricing-02.css.map */

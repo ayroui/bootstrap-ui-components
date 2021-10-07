@@ -1,0 +1,73 @@
+/* ===== Buttons Css ===== */
+.blog-style-two .blog-content .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.blog-style-two .blog-content .active.primary-btn-outline, .blog-style-two .blog-content .primary-btn-outline:hover, .blog-style-two .blog-content .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.blog-style-two .blog-content .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===== BLOG STYLE TWO =====*/
+.blog-style-two {
+  margin-top: 50px;
+  box-shadow: 0px 0px 30px var(--gray-4);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.blog-style-two .blog-image img {
+  width: 100%;
+}
+.blog-style-two .blog-content {
+  padding: 35px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-style-two .blog-content {
+    padding: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-style-two .blog-content {
+    padding: 20px;
+  }
+}
+.blog-style-two .blog-content .blog-title {
+  display: block;
+  margin-bottom: 8px;
+}
+.blog-style-two .blog-content .blog-title a {
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.blog-style-two .blog-content .blog-title a:hover {
+  color: var(--primary);
+}
+.blog-style-two .blog-content span {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-3);
+  margin-top: 8px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.blog-style-two .blog-content .text {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.blog-style-two .blog-content .primary-btn-outline {
+  margin-top: 25px;
+}
+
+/*# sourceMappingURL=blog-02.css.map */

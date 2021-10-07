@@ -1,0 +1,108 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===========================
+  Features One CSS 
+===========================*/
+
+.features-one {
+  background-color: var(--light-2);
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  & .section-title {
+    padding-bottom: 10px;
+  }
+
+  & .title {
+    font-size: 44px;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 55px;
+
+    @media #{$xs} {
+      font-size: 30px;
+      line-height: 35px;
+    }
+  }
+
+  & .text {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dark-3);
+    margin-top: 24px;
+  }
+}
+
+.features-style-one {
+  background-color: var(--white);
+  padding: 40px 20px;
+  margin-top: 40px;
+  box-shadow: var(--shadow-2);
+  border-radius: 4px;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: var(--shadow-4);
+  }
+
+  & .features-icon {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 40px;
+    color: var(--primary);
+    border: 2px solid rgba(187, 187, 187, 0.192);
+    border-radius: 50%;
+    @include transition(0.3s);
+
+    @media #{$xs} {
+      height: 70px;
+      width: 70px;
+      line-height: 70px;
+      font-size: 35px;
+    }
+  }
+
+  &:hover {
+    .features-icon {
+      border-color: transparent;
+      color: var(--white);
+      background-color: var(--primary);
+    }
+  }
+
+  & .features-content {
+    margin-top: 24px;
+  }
+
+  & .features-title {
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 600;
+    color: var(--black);
+    @include transition(0.3s);
+
+    @media #{$lg, $xs} {
+      font-size: 22px;
+    }
+  }
+
+  & .text {
+    color: var(--dark-3);
+    margin-top: 16px;
+  }
+
+  & .features-btn {
+    margin-top: 32px;
+  }
+
+  .primary-btn-outline {
+    @extend %primary-btn-outline;
+  }
+}

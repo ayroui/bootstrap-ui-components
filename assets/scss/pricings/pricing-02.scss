@@ -1,0 +1,102 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== PRICING STYLE TWO =====*/
+
+.pricing-two {
+  padding: 100px 0;
+}
+
+.pricing-style-two {
+  box-shadow: var(--shadow-3);
+  padding: 30px 30px 40px 30px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--white);
+  margin-top: 50px;
+
+  @media #{$md,$xs} {
+    padding: 35px 30px;
+  }
+
+  & .sub-title {
+    color: var(--black);
+    position: relative;
+    padding-bottom: 8px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 72px;
+      height: 4px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--primary);
+      margin: 0 auto;
+    }
+  }
+
+  & .price {
+    display: block;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 80px;
+    margin-top: 20px;
+    color: var(--black);
+
+    @media #{$xs} {
+      font-size: 45px;
+      margin-top: 16px;
+    }
+
+    @media #{$sm} {
+      font-size: 50px;
+      margin-top: 20px;
+    }
+  }
+
+  & .year {
+    color: var(--primary);
+    margin-top: 3px;
+  }
+
+  & .pricing-baloon {
+    position: absolute;
+    top: 0;
+    right: -78px;
+    width: 156px;
+  }
+
+  & .pricing-list {
+    margin-top: 40px;
+
+    & li {
+      color: var(--dark-3);
+      margin-top: 16px;
+
+      & i {
+        color: var(--primary);
+        margin-right: 8px;
+      }
+    }
+  }
+
+  & .pricing-btn {
+    margin-top: 42px;
+  }
+
+  & .primary-btn {
+    @extend %primary-btn;
+  }
+
+  & .bottom-shape {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 101%;
+    z-index: -1;
+  }
+}

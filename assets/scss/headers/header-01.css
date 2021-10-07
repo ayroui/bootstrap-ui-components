@@ -1,0 +1,105 @@
+/* ===== Buttons Css ===== */
+.header-one .header-content-area .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.header-one .header-content-area .active.primary-btn-outline, .header-one .header-content-area .primary-btn-outline:hover, .header-one .header-content-area .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.header-one .header-content-area .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===== HEADER ONE =====*/
+.header-one {
+  position: relative;
+}
+.header-one .header-content-area {
+  background-color: var(--primary);
+  position: relative;
+  padding: 130px 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-one .header-content-area {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 767px) {
+  .header-one .header-content-area {
+    padding: 60px 0;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .header-one .header-content-area {
+    height: 900px;
+  }
+}
+@media (max-width: 767px) {
+  .header-one .header-content-area {
+    height: 550px;
+  }
+}
+.header-one .header-content-area .primary-btn-outline {
+  border-color: var(--white);
+  background-color: var(--white);
+  color: var(--primary);
+}
+.header-one .header-content-area .primary-btn-outline:hover {
+  background-color: transparent;
+  border-color: var(--white);
+  color: var(--white);
+}
+.header-one .header-wrapper {
+  position: relative;
+}
+.header-one .header-content {
+  max-width: 540px;
+  position: relative;
+  z-index: 5;
+}
+.header-one .header-title {
+  color: var(--white);
+  font-weight: 800;
+}
+.header-one .text-lg {
+  color: var(--white);
+  font-weight: 300;
+  margin-top: 16px;
+}
+.header-one .header-btn {
+  margin-top: 40px;
+}
+.header-one .header-image {
+  text-align: center;
+}
+.header-one .header-image .image {
+  max-width: 730px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .header-one .header-image .image {
+    max-width: 600px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header-one .header-image .image {
+    max-width: 550px;
+  }
+}
+.header-one .header-image .image img {
+  width: 100%;
+}
+.header-one .header-shape {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.header-one .header-shape img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=header-01.css.map */

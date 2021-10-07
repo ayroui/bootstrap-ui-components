@@ -1,0 +1,257 @@
+@import "../variables";
+@import "../mixin";
+
+/*===========================
+  ACCORDIONS css 
+===========================*/
+
+.accordion-area {
+  padding: 100px 0;
+}
+.accordion-title {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* accordion-style-one */
+.accordion-style-one {
+  & .accordion {
+    & .card {
+      margin-top: 8px;
+      border: 1px solid var(--gray-4) !important;
+      border-radius: 4px;
+
+      & .card-header {
+        padding: 0;
+        background: none;
+
+        & a {
+          display: block;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          position: relative;
+          color: var(--primary);
+          @include transition(0.3s);
+          border: 1px solid var(--primary);
+          margin: -1px;
+          border-radius: 4px;
+          padding: 13px 16px;
+          z-index: 5;
+
+          &::before {
+            position: absolute;
+            content: "\ea5e";
+            font-family: lineicons !important;
+            right: 16px;
+            top: 14px;
+            font-size: 16px;
+            @include transition(0.3s);
+            @include transform(rotate(180deg));
+          }
+
+          &.collapsed {
+            color: var(--black);
+            border-color: var(--gray-4);
+
+            &::before {
+              @include transform(rotate(0));
+            }
+          }
+        }
+      }
+      & .card-body {
+        padding: 16px;
+
+        & .text {
+          color: var(--dark-3);
+        }
+      }
+    }
+  }
+}
+
+/* accordion-style-two */
+.accordion-style-two {
+  & .accordion {
+    & .card {
+      margin-top: 8px;
+      border: 1px solid var(--gray-4) !important;
+      border-radius: 4px;
+
+      & .card-header {
+        padding: 0;
+        background: none;
+
+        & a {
+          display: block;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          position: relative;
+          color: var(--white);
+          @include transition(0.3s);
+          border: 1px solid var(--primary);
+          margin: -1px;
+          border-radius: 4px;
+          padding: 13px 16px;
+          z-index: 5;
+          background-color: var(--primary);
+
+          &::before {
+            position: absolute;
+            content: "\ea5e";
+            font-family: lineicons !important;
+            right: 16px;
+            top: 14px;
+            font-size: 16px;
+            @include transition(0.3s);
+            @include transform(rotate(180deg));
+          }
+
+          &.collapsed {
+            color: var(--black);
+            border-color: var(--gray-4);
+            background-color: transparent;
+
+            &::before {
+              @include transform(rotate(0));
+            }
+          }
+        }
+      }
+      & .card-body {
+        padding: 16px;
+
+        & .text {
+          color: var(--dark-3);
+        }
+      }
+    }
+  }
+}
+
+/* accordion-style-three */
+.accordion-style-three {
+  & .accordion {
+    & .card {
+      border-radius: 0;
+      border: 0;
+      overflow: visible;
+
+      & .card-header {
+        padding: 0;
+        background: none;
+
+        & a {
+          display: block;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          position: relative;
+          color: var(--white);
+          @include transition(0.3s);
+          border: 2px solid var(--primary);
+          border-radius: 0;
+          padding: 13px 16px;
+          z-index: 5;
+          border-left: 0;
+          border-right: 0;
+          background: var(--primary);
+          margin-top: -2px;
+
+          &::before {
+            position: absolute;
+            content: "\ea5e";
+            font-family: lineicons !important;
+            right: 16px;
+            top: 14px;
+            font-size: 16px;
+            @include transition(0.3s);
+            @include transform(rotate(180deg));
+          }
+
+          &.collapsed {
+            color: var(--black);
+            border: 2px solid var(--light-1);
+            background: transparent;
+            border-left: 0;
+            border-right: 0;
+
+            &::before {
+              @include transform(rotate(0));
+            }
+          }
+        }
+      }
+      & .card-body {
+        padding: 16px;
+
+        & .text {
+          color: var(--dark-3);
+        }
+      }
+    }
+  }
+}
+
+/* accordion-style-four */
+.accordion-style-four {
+  & .accordion {
+    & .card {
+      margin-top: 8px;
+      border-radius: 0;
+      border: 0;
+
+      & .card-header {
+        padding: 0;
+        background: none;
+
+        & a {
+          display: block;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          position: relative;
+          color: var(--white);
+          @include transition(0.3s);
+          margin: -1px;
+          border-radius: 0;
+          padding: 13px 16px;
+          z-index: 5;
+
+          border: 0;
+          background: var(--primary);
+
+          &::before {
+            position: absolute;
+            content: "\ea5e";
+            font-family: lineicons !important;
+            right: 16px;
+            top: 14px;
+            font-size: 16px;
+            @include transition(0.3s);
+            @include transform(rotate(180deg));
+          }
+
+          &.collapsed {
+            color: var(--black);
+            border-color: var(--gray-4);
+            background: var(--light-2);
+
+            &::before {
+              @include transform(rotate(0));
+            }
+          }
+        }
+      }
+      & .card-body {
+        padding: 16px;
+
+        & .text {
+          color: var(--dark-3);
+        }
+      }
+    }
+  }
+}

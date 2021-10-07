@@ -1,0 +1,341 @@
+/*===========================
+  tabs AND ACCORDIONS css 
+===========================*/
+.tabs-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .tabs-title {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+/* tabs-one */
+.tabs-one {
+  border: 1px solid var(--gray-4);
+}
+.tabs-one .nav {
+  border-bottom: 1px solid var(--gray-4);
+}
+@media (max-width: 767px) {
+  .tabs-one .nav {
+    display: block;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tabs-one .nav {
+    display: flex;
+  }
+}
+.tabs-one .nav .nav-item a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-weight: 700;
+  padding: 13px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+}
+.tabs-one .nav .nav-item a.active {
+  color: var(--white);
+  background: var(--primary);
+}
+.tabs-one .tab-content .tab-text {
+  padding: 15px;
+}
+.tabs-one .tab-content .tab-text .text {
+  color: var(--dark-3);
+}
+
+/* tabs-two */
+.tabs-two {
+  border: 1px solid var(--gray-4);
+}
+@media (max-width: 767px) {
+  .tabs-two .nav {
+    display: block;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tabs-two .nav {
+    display: flex;
+  }
+}
+.tabs-two .nav .nav-item a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-weight: 700;
+  padding: 13px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+  border-bottom: 1px solid var(--gray-4);
+  position: relative;
+}
+.tabs-two .nav .nav-item a.active {
+  color: var(--primary);
+  background: var(--primary-light);
+  border: 1px solid var(--gray-4);
+  border-bottom: 0;
+  border-top: 0;
+}
+@media (max-width: 767px) {
+  .tabs-two .nav .nav-item a.active {
+    border: 1px solid var(--gray-4);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tabs-two .nav .nav-item a.active {
+    border: 1px solid var(--gray-4);
+    border-bottom: 0;
+    border-top: 0;
+  }
+}
+.tabs-two .nav .nav-item a.active::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  background: var(--primary);
+}
+.tabs-two .nav .nav-item:first-child a.active {
+  border-left: 0;
+}
+.tabs-two .nav .nav-item:last-child a.active {
+  border-right: 0;
+}
+.tabs-two .tab-content .tab-text {
+  padding: 15px;
+}
+.tabs-two .tab-content .tab-text .text {
+  color: var(--dark-3);
+}
+
+/* tabs-three */
+@media (max-width: 767px) {
+  .tabs-three .nav {
+    display: block;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tabs-three .nav {
+    display: flex;
+  }
+}
+.tabs-three .nav .nav-item a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-weight: 700;
+  padding: 13px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+  position: relative;
+}
+.tabs-three .nav .nav-item a i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.tabs-three .nav .nav-item a::before {
+  position: absolute;
+  content: "";
+  background-color: var(--gray-4);
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+}
+.tabs-three .nav .nav-item a.active {
+  color: var(--primary);
+  background: var(--primary-light);
+}
+.tabs-three .nav .nav-item a.active::before {
+  background: var(--primary);
+}
+.tabs-three .tab-content .tab-text {
+  padding: 15px;
+}
+.tabs-three .tab-content .tab-text .text {
+  color: var(--dark-3);
+}
+
+/* tabs-four */
+@media (max-width: 767px) {
+  .tabs-four .nav {
+    display: block;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tabs-four .nav {
+    display: flex;
+  }
+}
+.tabs-four .nav .nav-item a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-weight: 700;
+  padding: 13px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .tabs-four .nav .nav-item a {
+    margin-top: -4px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tabs-four .nav .nav-item a {
+    margin-top: 0;
+  }
+}
+.tabs-four .nav .nav-item a i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.tabs-four .nav .nav-item a::before {
+  position: absolute;
+  content: "";
+  background-color: var(--gray-4);
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+}
+.tabs-four .nav .nav-item a.active {
+  color: var(--white);
+  background: var(--primary);
+}
+.tabs-four .nav .nav-item a.active::before {
+  background: var(--primary);
+}
+.tabs-four .tab-content .tab-text {
+  padding: 15px;
+}
+.tabs-four .tab-content .tab-text .text {
+  color: var(--dark-3);
+}
+
+/* tabs-five */
+.tabs-five {
+  box-shadow: var(--shadow-4);
+  border-radius: 4px;
+}
+.tabs-five .nav {
+  height: 100%;
+}
+.tabs-five .nav a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-weight: 700;
+  padding: 13px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+  position: relative;
+  text-align: center;
+  border-radius: 4px;
+}
+.tabs-five .nav a i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.tabs-five .nav a.active {
+  color: var(--white);
+  background: var(--primary);
+}
+.tabs-five .tab-content .tab-text {
+  padding: 15px;
+}
+.tabs-five .tab-content .tab-text .text {
+  color: var(--dark-3);
+}
+
+/* tabs-six */
+.tabs-six {
+  border: 1px solid var(--gray-4);
+}
+.tabs-six .nav {
+  height: 100%;
+  position: relative;
+}
+.tabs-six .nav::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: var(--gray-4);
+  top: 0;
+  right: 0;
+}
+.tabs-six .nav a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-weight: 700;
+  padding: 13px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.tabs-six .nav a i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.tabs-six .nav a.active {
+  color: var(--primary);
+  background: var(--primary-light);
+}
+.tabs-six .nav a.active::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: var(--primary);
+  top: 0;
+  right: 0;
+}
+.tabs-six .tab-content .tab-text {
+  padding: 15px;
+}
+.tabs-six .tab-content .tab-text .text {
+  color: var(--dark-3);
+}
+
+/*# sourceMappingURL=tabs.css.map */

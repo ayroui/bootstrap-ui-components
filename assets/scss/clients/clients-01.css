@@ -1,0 +1,59 @@
+/*===========================
+    clients-01 css 
+===========================*/
+.client-logo-area .section-title-two {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-logo-area .section-title-two {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .client-logo-area .section-title-two {
+    margin-bottom: 35px;
+  }
+}
+.client-logo-area .section-title-two span {
+  text-transform: capitalize;
+  color: var(--white);
+  background: var(--primary);
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+.client-logo-area .section-title-two h2 {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-logo-area .section-title-two h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .client-logo-area .section-title-two h2 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+.client-logo-area .section-title-two p {
+  color: var(--dark-3);
+}
+
+/*===== Client Logo One =====*/
+.client-logo-one {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.client-logo-one .single-client {
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=clients-01.css.map */

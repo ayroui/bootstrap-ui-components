@@ -1,0 +1,376 @@
+@import "../variables";
+@import "../mixin";
+
+/*===========================
+  tabs AND ACCORDIONS css 
+===========================*/
+
+.tabs-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--black);
+  margin-bottom: 20px;
+
+  @media #{$xs} {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+/* tabs-one */
+.tabs-one {
+  border: 1px solid var(--gray-4);
+
+  & .nav {
+    border-bottom: 1px solid var(--gray-4);
+
+    @media #{$xs} {
+      display: block;
+    }
+    @media #{$sm} {
+      display: flex;
+    }
+
+    & .nav-item {
+      & a {
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--dark-3);
+        font-weight: 700;
+        padding: 13px;
+        @include transition(0.3s);
+        display: block;
+
+        &.active {
+          color: var(--white);
+          background: var(--primary);
+        }
+      }
+    }
+  }
+
+  & .tab-content {
+    & .tab-text {
+      padding: 15px;
+
+      & .text {
+        color: var(--dark-3);
+      }
+    }
+  }
+}
+
+/* tabs-two */
+.tabs-two {
+  border: 1px solid var(--gray-4);
+
+  & .nav {
+    @media #{$xs} {
+      display: block;
+    }
+    @media #{$sm} {
+      display: flex;
+    }
+
+    & .nav-item {
+      & a {
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--dark-3);
+        font-weight: 700;
+        padding: 13px;
+        @include transition(0.3s);
+        display: block;
+        border-bottom: 1px solid var(--gray-4);
+        position: relative;
+
+        &.active {
+          color: var(--primary);
+          background: var(--primary-light);
+          border: 1px solid var(--gray-4);
+          border-bottom: 0;
+          border-top: 0;
+
+          @media #{$xs} {
+            border: 1px solid var(--gray-4);
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+          }
+          @media #{$sm} {
+            border: 1px solid var(--gray-4);
+            border-bottom: 0;
+            border-top: 0;
+          }
+
+          &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            width: 100%;
+            height: 4px;
+            left: 0;
+            background: var(--primary);
+          }
+        }
+      }
+
+      &:first-child {
+        & a {
+          &.active {
+            border-left: 0;
+          }
+        }
+      }
+
+      &:last-child {
+        & a {
+          &.active {
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  & .tab-content {
+    & .tab-text {
+      padding: 15px;
+
+      & .text {
+        color: var(--dark-3);
+      }
+    }
+  }
+}
+
+/* tabs-three */
+.tabs-three {
+  & .nav {
+    @media #{$xs} {
+      display: block;
+    }
+    @media #{$sm} {
+      display: flex;
+    }
+
+    & .nav-item {
+      & a {
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--dark-3);
+        font-weight: 700;
+        padding: 13px;
+        @include transition(0.3s);
+        display: block;
+        position: relative;
+
+        & i {
+          margin-right: 5px;
+          font-size: 18px;
+        }
+
+        &::before {
+          position: absolute;
+          content: "";
+          background-color: var(--gray-4);
+          width: 100%;
+          height: 4px;
+          left: 0;
+          bottom: 0;
+        }
+
+        &.active {
+          color: var(--primary);
+          background: var(--primary-light);
+
+          &::before {
+            background: var(--primary);
+          }
+        }
+      }
+    }
+  }
+
+  & .tab-content {
+    & .tab-text {
+      padding: 15px;
+
+      & .text {
+        color: var(--dark-3);
+      }
+    }
+  }
+}
+
+/* tabs-four */
+.tabs-four {
+  & .nav {
+    @media #{$xs} {
+      display: block;
+    }
+    @media #{$sm} {
+      display: flex;
+    }
+
+    & .nav-item {
+      & a {
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--dark-3);
+        font-weight: 700;
+        padding: 13px;
+        @include transition(0.3s);
+        display: block;
+        position: relative;
+
+        @media #{$xs} {
+          margin-top: -4px;
+        }
+        @media #{$sm} {
+          margin-top: 0;
+        }
+
+        & i {
+          margin-right: 5px;
+          font-size: 18px;
+        }
+
+        &::before {
+          position: absolute;
+          content: "";
+          background-color: var(--gray-4);
+          width: 100%;
+          height: 4px;
+          left: 0;
+          bottom: 0;
+        }
+
+        &.active {
+          color: var(--white);
+          background: var(--primary);
+
+          &::before {
+            background: var(--primary);
+          }
+        }
+      }
+    }
+  }
+
+  & .tab-content {
+    & .tab-text {
+      padding: 15px;
+
+      & .text {
+        color: var(--dark-3);
+      }
+    }
+  }
+}
+
+/* tabs-five */
+.tabs-five {
+  box-shadow: var(--shadow-4);
+  border-radius: 4px;
+
+  & .nav {
+    height: 100%;
+
+    & a {
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--dark-3);
+      font-weight: 700;
+      padding: 13px;
+      @include transition(0.3s);
+      display: block;
+      position: relative;
+      text-align: center;
+      border-radius: 4px;
+
+      & i {
+        margin-right: 5px;
+        font-size: 18px;
+      }
+
+      &.active {
+        color: var(--white);
+        background: var(--primary);
+      }
+    }
+  }
+
+  & .tab-content {
+    & .tab-text {
+      padding: 15px;
+
+      & .text {
+        color: var(--dark-3);
+      }
+    }
+  }
+}
+
+/* tabs-six */
+.tabs-six {
+  border: 1px solid var(--gray-4);
+
+  & .nav {
+    height: 100%;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 4px;
+      height: 100%;
+      background-color: var(--gray-4);
+      top: 0;
+      right: 0;
+    }
+
+    & a {
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--dark-3);
+      font-weight: 700;
+      padding: 13px;
+      @include transition(0.3s);
+      display: block;
+      position: relative;
+      text-align: center;
+
+      & i {
+        margin-right: 5px;
+        font-size: 18px;
+      }
+
+      &.active {
+        color: var(--primary);
+        background: var(--primary-light);
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 4px;
+          height: 100%;
+          background: var(--primary);
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  & .tab-content {
+    & .tab-text {
+      padding: 15px;
+
+      & .text {
+        color: var(--dark-3);
+      }
+    }
+  }
+}

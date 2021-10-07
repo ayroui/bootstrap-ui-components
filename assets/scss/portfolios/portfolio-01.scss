@@ -1,0 +1,173 @@
+@import "../variables";
+@import "../mixin";
+
+/*===== portfolio ONE =====*/
+
+.portfolio-one {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  & .portfolio-menu {
+    & button {
+      border: none;
+      background: none;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--dark-3);
+      line-height: 48px;
+      padding: 0 30px;
+      position: relative;
+      border-radius: 50px;
+      overflow: hidden;
+      display: inline-block;
+      z-index: 5;
+      @include transition(0.3s);
+      cursor: pointer;
+      margin-right: 4px;
+      text-transform: uppercase;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media #{$md} {
+        font-size: 14px;
+        padding: 0 26px;
+      }
+
+      @media #{$xs} {
+        font-size: 14px;
+        padding: 0 22px;
+        line-height: 42px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--primary);
+        z-index: -1;
+        opacity: 0;
+        @include transition(0.3s);
+      }
+
+      &:hover,
+      &.active {
+        color: var(--white);
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+}
+
+.portfolio-style-one {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 30px;
+
+  & .portfolio-image {
+    & img {
+      width: 100%;
+      @include transition(0.3s);
+    }
+  }
+
+  & .portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(0.5s);
+  }
+
+  & .portfolio-content {
+    padding: 16px;
+  }
+
+  & .portfolio-icon {
+    position: relative;
+    display: inline-block;
+
+    & a {
+      font-size: 30px;
+      color: var(--white);
+      position: relative;
+      z-index: 5;
+      line-height: 90px;
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+      text-align: center;
+      border: 2px solid var(--white);
+      border-radius: 50%;
+      @include transition(0.3s);
+
+      &:hover {
+        background-color: var(--white);
+        color: var(--primary);
+        border-color: transparent;
+      }
+    }
+  }
+
+  & .portfolio-text {
+    padding-top: 24px;
+
+    @media #{$xs} {
+      padding-top: 10px;
+    }
+  }
+
+  & .portfolio-title {
+    & a {
+      color: var(--white);
+      font-size: 24px;
+      line-height: 30px;
+
+      @media #{$lg} {
+        font-size: 20px;
+      }
+
+      @media #{$xs} {
+        font-size: 20px;
+      }
+    }
+  }
+
+  & .text {
+    color: var(--white);
+    margin-top: 8px;
+    opacity: 0.7;
+  }
+
+  &:hover {
+    & .portfolio-image {
+      & img {
+        @include filter(blur(8px));
+      }
+    }
+
+    & .portfolio-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

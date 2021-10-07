@@ -1,0 +1,51 @@
+/*===========================
+  Section Title Five CSS
+===========================*/
+.section-title-five {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 5;
+  margin-top: 12px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title-five {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .section-title-five {
+    margin-bottom: 35px;
+  }
+}
+.section-title-five h6 {
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 30px;
+  padding: 8px 30px;
+}
+.section-title-five h2 {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title-five h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .section-title-five h2 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+.section-title-five p {
+  color: var(--dark-3);
+}
+
+/*# sourceMappingURL=section-title-05.css.map */

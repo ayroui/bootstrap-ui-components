@@ -1,0 +1,148 @@
+/*===========================
+  services css 
+===========================*/
+.services-one {
+  position: relative;
+  background-color: var(--light-2);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.services-one .section-title {
+  padding-bottom: 10px;
+}
+.services-one .section-title .title {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 55px;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+@media (max-width: 767px) {
+  .services-one .section-title .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+.services-one .section-title p {
+  color: var(--dark-3);
+}
+.services-one .services-content {
+  margin-top: 40px;
+  display: inline-block;
+}
+.services-one .services-content .services-icon {
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 35px;
+  float: left;
+  margin-right: 20px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.services-one .services-content:hover .services-icon {
+  background-color: var(--primary-dark);
+  color: var(--white);
+}
+.services-one .services-content .media-body {
+  padding-left: 100px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .services-one .services-content .media-body {
+    padding-right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .services-one .services-content .media-body {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .services-one .services-content .media-body {
+    padding-left: 0px;
+    padding-top: 0;
+  }
+}
+.services-one .services-content .media-body .services-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--black);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .services-one .services-content .media-body .services-title {
+    font-size: 22px;
+  }
+}
+.services-one .services-content .media-body .text {
+  color: var(--dark-3);
+  margin-top: 8px;
+}
+.services-one .services-image {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .services-one .services-image {
+    width: 35%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .services-one .services-image {
+    width: 34%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-one .services-image {
+    position: relative;
+    width: 720px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .services-one .services-image {
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .services-one .services-image {
+    position: relative;
+    width: 540px;
+    margin: 0 auto;
+  }
+}
+.services-one .services-image .image {
+  max-width: 400px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-one .services-image .image {
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .services-one .services-image .image {
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+}
+.services-one .services-image .image img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=service-01.css.map */

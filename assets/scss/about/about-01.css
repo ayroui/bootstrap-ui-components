@@ -1,0 +1,100 @@
+/*===========================
+  about-01 css
+===========================*/
+.about-one {
+  background-color: var(--light-3);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.about-one .about-title {
+  margin-bottom: 20px;
+}
+.about-one .single-about-items {
+  margin-top: 30px;
+  padding: 35px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--shadow-2);
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.about-one .single-about-items:hover {
+  box-shadow: var(--shadow-4);
+}
+.about-one .single-about-items::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  height: 80px;
+  width: 50px;
+  border: 1px solid var(--primary);
+  border-radius: 0 0 0 30px;
+  right: -1px;
+  top: -1px;
+  opacity: 0.1;
+}
+.about-one .single-about-items::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  height: 40px;
+  width: 40px;
+  border: 1px solid var(--primary);
+  border-radius: 50px;
+  right: 60px;
+  top: 10px;
+  opacity: 0.1;
+}
+.about-one .single-about-items .items-icon {
+  width: 70px;
+  height: 70px;
+  line-height: 85px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--white);
+  color: var(--primary);
+  box-shadow: var(--shadow-2);
+}
+.about-one .single-about-items .items-icon i {
+  font-size: 32px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-one .single-about-items .items-icon {
+    max-width: 90px;
+  }
+}
+@media (max-width: 767px) {
+  .about-one .single-about-items .items-icon {
+    max-width: 80px;
+  }
+}
+.about-one .single-about-items .items-content {
+  margin-top: 32px;
+}
+@media only screen and (min-width: 1400px) {
+  .about-one .single-about-items .items-content {
+    padding-right: 45px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-one .single-about-items .items-content {
+    padding-right: 35px;
+  }
+}
+.about-one .single-about-items .items-content .items-title {
+  color: var(--black);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.about-one .single-about-items .items-content .text {
+  color: var(--dark-3);
+}
+
+/*# sourceMappingURL=about-01.css.map */

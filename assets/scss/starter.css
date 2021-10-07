@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+/*===========================
+  COMMON css 
+===========================*/
+:root {
+  --font-family: "Inter", sans-serif;
+  --primary: #155bd5;
+  --primary-dark: #1c3ab6;
+  --primary-light: #e2f1ff;
+  --accent: #00d4d7;
+  --accent-dark: #00bac1;
+  --accent-light: #dff9f8;
+  --success: #13d527;
+  --success-dark: #00ae11;
+  --success-light: #eafbe7;
+  --secondary: #8f15d5;
+  --secondary-dark: #6013c7;
+  --secondary-light: #f4e5fa;
+  --info: #15b2d5;
+  --info-dark: #0f8ca8;
+  --info-light: #e0f5fa;
+  --caution: #dbbb25;
+  --caution-dark: #d58f15;
+  --caution-light: #fbf9e4;
+  --error: #e6185e;
+  --error-dark: #bf1257;
+  --error-light: #fce4eb;
+  --black: #1d1d1d;
+  --dark-1: #2d2d2d;
+  --dark-2: #4d4d4d;
+  --dark-3: #6d6d6d;
+  --gray-1: #8d8d8d;
+  --gray-2: #adadad;
+  --gray-3: #cdcdcd;
+  --gray-4: #e0e0e0;
+  --light-1: #efefef;
+  --light-2: #f5f5f5;
+  --light-3: #fafafa;
+  --white: #ffffff;
+  --gradient-1: linear-gradient(180deg, #155bd5 0%, #1c3ab6 100%);
+  --gradient-2: linear-gradient(180deg, #155bd5 13.02%, #00d4d7 85.42%);
+  --gradient-3: linear-gradient(180deg, #155bd5 0%, #8f15d5 100%);
+  --gradient-4: linear-gradient(180deg, #155bd5 0%, #13d527 100%);
+  --gradient-5: linear-gradient(180deg, #155bd5 0%, #15bbd5 100%);
+  --gradient-6: linear-gradient(180deg, #155bd5 0%, #dbbb25 100%);
+  --gradient-7: linear-gradient(180deg, #155bd5 0%, #e6185e 100%);
+  --gradient-8: linear-gradient(180deg, #1c3ab6 0%, #00bac1 100%);
+  --gradient-9: linear-gradient(180deg, #00d4d7 13.02%, #155bd5 85.42%);
+  --shadow-1: 0px 0px 1px rgba(40, 41, 61, 0.08),
+    0px 0.5px 2px rgba(96, 97, 112, 0.16);
+  --shadow-2: 0px 0px 1px rgba(40, 41, 61, 0.04),
+    0px 2px 4px rgba(96, 97, 112, 0.16);
+  --shadow-3: 0px 0px 2px rgba(40, 41, 61, 0.04),
+    0px 4px 8px rgba(96, 97, 112, 0.16);
+  --shadow-4: 0px 2px 4px rgba(40, 41, 61, 0.04),
+    0px 8px 16px rgba(96, 97, 112, 0.16);
+  --shadow-5: 0px 2px 8px rgba(40, 41, 61, 0.04),
+    0px 16px 24px rgba(96, 97, 112, 0.16);
+  --shadow-6: 0px 2px 8px rgba(40, 41, 61, 0.08),
+    0px 20px 32px rgba(96, 97, 112, 0.24);
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--black);
+  font-size: 16px;
+}
+@media (max-width: 991px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  display: inline-block;
+}
+
+a,
+button,
+a:hover,
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: var(--black);
+  margin: 0px;
+}
+
+h1,
+.h1 {
+  font-size: 2.75em;
+  line-height: 1.25;
+}
+
+h2,
+.h2 {
+  font-size: 2.25em;
+  line-height: 1.25;
+}
+
+h3,
+.h3 {
+  font-size: 1.75em;
+  line-height: 1.25;
+}
+
+h4,
+.h4 {
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+h5,
+.h5 {
+  font-size: 1.25em;
+  line-height: 1.25;
+}
+
+h6,
+.h6 {
+  font-size: 0.875em;
+  line-height: 1.25;
+}
+
+.display-1 {
+  font-size: 5.5em;
+  line-height: 1.25;
+}
+
+.display-2 {
+  font-size: 4.75em;
+  line-height: 1.25;
+}
+
+.display-3 {
+  font-size: 4em;
+  line-height: 1.25;
+}
+
+.display-4 {
+  font-size: 3.25em;
+  line-height: 1.25;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--dark-3);
+  margin: 0px;
+}
+
+.text-small {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.text-lg {
+  font-size: 1.15em;
+  line-height: 1.5;
+}
+
+.bg_cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+.btn:hover {
+  color: inherit;
+}
+.btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+.btn.btn-lg {
+  font-size: 1.15em;
+  padding: 16px 24px;
+}
+.btn.btn-sm {
+  padding: 8px 16px;
+}
+.btn.square {
+  border-radius: 0px;
+}
+.btn.semi-rounded {
+  border-radius: 12px;
+}
+.btn.rounded-full {
+  border-radius: 50px;
+}
+.btn.icon-left span,
+.btn.icon-left i {
+  margin-right: 8px;
+}
+.btn.icon-right span,
+.btn.icon-right i {
+  margin-left: 8px;
+}
+.btn.icon-btn {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  line-height: 48px;
+}
+.btn.icon-btn.btn-lg {
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+}
+.btn.icon-btn.btn-sm {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+/*# sourceMappingURL=starter.css.map */
