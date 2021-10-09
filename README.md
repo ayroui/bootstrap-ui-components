@@ -13,5 +13,5 @@ Ayro UI is Bootstrap UI Library that comes with hundreds of essential UI compone
 You can always support this project and inspire our team by [Starring🌟 This Repository](https://github.com/ayroui/free-ui-components/) 
 and sharing with friends. If you like the the library consider purchasing the [Pro version](https://ayroui.com/pricing) with 300+ UI elements and all pro features you need.
 
-## 📃 License
+## 🎁 License
 Core Version is 100% Free! you can use it with your personal or commercial projects without any attribution or backlink.
