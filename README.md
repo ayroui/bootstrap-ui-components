@@ -7,7 +7,11 @@ Ayro UI is Bootstrap UI Library that comes with hundreds of essential UI compone
 
 ### [📃 Documentation](https://ayroui.com/docs)
 
-[![playbootstrap-demo](https://uideck.com/wp-content/uploads/2021/10/ayroui-core-gh.png)](https://ayroui.com/components)
+[![components](https://uideck.com/wp-content/uploads/2021/10/ayroui-core-gh.png)](https://ayroui.com/components)
+
+## Components
+
+![sneak-peek](https://github.com/ayroui/free-ui-components/blob/main/components.jpg)
 
 ## 💙 Support
 You can always support this project and inspire our team by [Starring🌟 This Repository](https://github.com/ayroui/free-ui-components/) 
