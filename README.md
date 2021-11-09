@@ -1,7 +1,7 @@
 # Free Core Version of Ayro UI
 Ayro UI is Bootstrap UI Library that comes with hundreds of essential UI components, blocks, pages, and templates. It consists of UI library, essential components and a minimal design system. Free Core version comes with all essential core components, 40+ ready-to-use UI components and assets that you need to get started afresh web project.
 
-### [🚀 Browse Componets](https://ayroui.com/components)
+### [🚀 Browse Components](https://ayroui.com/components)
 
 ### [🌏 Visit Website](https://ayroui.com)
 
